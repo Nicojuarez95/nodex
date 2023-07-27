@@ -5,6 +5,8 @@ import responsive from "../src/Img/responsive.png"
 import seo from "../src/Img/seo.png"
 import diseño from "../src/Img/diseño.png"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFacebookF } from '@fortawesome/free-brands-svg-icons';
+import { faInstagram } from '@fortawesome/free-brands-svg-icons';
 import './App.css';
 
 function App() {
@@ -83,10 +85,10 @@ function App() {
       <footer>
         <div className='redes'>
                 <a href="#">
-                  <FontAwesomeIcon icon="fa-brands fa-facebook" />
+                  <FontAwesomeIcon icon={faFacebookF} style={{ width: '50px', height: '50px' }}/>
                 </a>
                 <a href="#">
-                  <FontAwesomeIcon icon="fa-brands fa-instagram" />
+                  <FontAwesomeIcon icon={faInstagram} style={{ width: '50px', height: '50px' }}/>
                 </a>
         </div>
         <div className='copi'>
