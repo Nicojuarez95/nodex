@@ -4,6 +4,7 @@ import dominio from "../src/Img/dominio.png"
 import responsive from "../src/Img/responsive.png"
 import seo from "../src/Img/seo.png"
 import diseño from "../src/Img/diseño.png"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './App.css';
 
 function App() {
@@ -42,6 +43,7 @@ function App() {
           </div>
         </div>
         </section>
+
         <section className='section2'>
           <div className='section2-1'>
             <div className='ventajas'>
@@ -62,13 +64,34 @@ function App() {
             </div>
           </div>
           <div className='section2-2'>
-
+            <div className='testimonio'>
+              <img className='img-testimonio' src={dominio} alt="" />
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero, mollitia nihil. Quasi, atque ut quaerat amet excepturi rerum veritatis incidunt quidem.</p>
+            </div>
+            <div className='testimonio'>
+              <img className='img-testimonio' src={dominio} alt="" />
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero, mollitia nihil. Quasi, atque ut quaerat amet excepturi rerum veritatis incidunt quidem.</p>
+            </div>
+            <div className='testimonio'>
+              <img className='img-testimonio' src={dominio} alt="" />
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero, mollitia nihil. Quasi, atque ut quaerat amet excepturi rerum veritatis incidunt quidem.</p>
+            </div>
           </div>
 
         </section>
       </main>
       <footer>
-
+        <div className='redes'>
+                <a href="#">
+                  <FontAwesomeIcon icon="fa-brands fa-facebook" />
+                </a>
+                <a href="#">
+                  <FontAwesomeIcon icon="fa-brands fa-instagram" />
+                </a>
+        </div>
+        <div className='copi'>
+          <p>PROYECTO WEB- Todos los derechos reservados</p>
+        </div>
       </footer>
     </div>
   );
