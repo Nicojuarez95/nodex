@@ -96,3 +96,11 @@ footer{
   width: 48%;
   justify-content: end;
 }
+@media (min-width: 320px) and (max-width: 750px) {
+  .section1-1{
+   display: none;
+  }
+  .section1-2{
+    width: 100%;
+  }
+}
