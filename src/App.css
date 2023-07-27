@@ -10,12 +10,61 @@
 .section1{
   background-color: rgb(175, 14, 14);
   height: 85vh;
+  display: flex;
+}
+.section1-1{
+  width: 50%;
+  background-color: blanchedalmond;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3vw 3vw 0px 3vw
+}
+.imgHero{
+  width: 70%;
+}
+.section1-2{
+  width: 50%;
+  background-color: rgb(223, 101, 101);
+  padding: 120px 10vw 0px 10vw;
 }
 
 .section2{
-  background-color: rgb(104, 12, 12);
+  background-color: rgb(124, 21, 21);
   height: 85vh;
   width: 100%;
+}
+.section2-1{
+  height: 30%;
+  background-color: aquamarine;
+  display: flex;
+  gap: 5px;
+}
+.ventajas{
+  width: 25%;
+  background-color: red;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0px 20px 0px;
+}
+.ventajas img{
+  width: 20%;
+  object-fit: contain;
+}
+.dominio{
+  width: 80px !important;
+}
+.seo{
+  margin-top: 10px;
+  width: 120px !important;
+}
+
+.section2-2{
+  height: 70%;
+  background-color: rgb(43, 88, 73);
 }
 footer{
   background-color: rgb(32, 32, 114);
