@@ -59,11 +59,12 @@ function App() {
         <section className='section1'>
         <div className='section1-1'>
           <img className='imgHero' src={imgHero} alt="" />
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi distinctio obcaecati debitis at impedit? Placeat nesciunt ullam, labore necessitatibus veniam voluptate odit, harum, inventore architecto dolore obcaecati eum quisquam suscipit. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic inventore tenetur laborum molestiae placeat fuga, totam eveniet similique veritatis laboriosam vero dolorem dolores minima nisi nulla quia impedit ipsum autem? Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi nemo ad cumque, odio ipsum quasi distinctio aliquam nisi nulla officia adipisci sit quo nam. Voluptates excepturi sunt repudiandae a sapiente.</p>
+          <p className='textHero'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi distinctio obcaecati debitis at impedit? Placeat nesciunt ullam, labore necessitatibus veniam voluptate odit, harum, inventore architecto dolore obcaecati eum quisquam suscipit. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic inventore tenetur laborum molestiae placeat fuga, totam eveniet similique veritatis laboriosam vero dolorem dolores minima nisi nulla quia impedit ipsum autem? Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi nemo ad cumque, odio ipsum quasi distinctio aliquam nisi nulla officia adipisci sit quo nam. Voluptates excepturi sunt repudiandae a sapiente.</p>
         </div>
 
         <div className='section1-2'>
           <form onSubmit={handleSubmit} ref={form}>
+            <h2>Dejanos tu feedback</h2>
           <div class="mb-3">
             <label for="exampleFormControlInput1" class="form-label">Nombre</label>
             <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Ej:José Lopez" name="user_name" onChange={(e) => onFormUpdate('firstName', e.target.value)}/>
@@ -74,7 +75,7 @@ function App() {
           </div>
           <div class="mb-3">
             <label for="exampleFormControlInput1" class="form-label">Email</label>
-            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Ej:name@example.com" name="user_email" onChange={(e) => onFormUpdate('email', e.target.value)} />
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Ej:nombre@ejemplo.com" name="user_email" onChange={(e) => onFormUpdate('email', e.target.value)} />
           </div>
           <div class="mb-3">
             <label for="exampleFormControlTextarea1" class="form-label">Mensaje/Consulta</label>
@@ -98,19 +99,19 @@ function App() {
           <div className='section2-1'>
             <div className='ventajas'>
               <img className='dominio' src={dominio} alt="" />
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis, natus laborum architecto quod cumque mollitia delectus tenetur illum quis!</p>
+              <p>Tu Dominio Gratis por un año. Al elegir nuestro servicio, obtendrás un dominio sin costo adicional durante todo el primer año.</p>
             </div>
             <div className='ventajas'>
               <img src={diseño} alt="" />
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis, natus laborum architecto quod cumque mollitia delectus tenetur illum quis!</p>
+              <p>Impresiona con un Diseño Personalizado. Destaca entre la competencia con una página web única y atractiva que represente la esencia de tu marca.</p>
             </div>
             <div className='ventajas'>
               <img className='seo' src={seo} alt="" />
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis, natus laborum architecto quod cumque mollitia delectus tenetur illum quis!</p>
+              <p>Aumenta tu visibilidad con SEO. Nuestro equipo experto en SEO trabajará para posicionar tu sitio web en los primeros resultados de búsqueda.</p>
             </div>
             <div className='ventajas'>
               <img src={responsive} alt="" />
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis, natus laborum architecto quod cumque mollitia delectus tenetur illum quis!</p>
+              <p>Experiencia óptima en todos los dispositivos. Nuestros diseños son completamente Responsive para que tus clientes disfruten de tu web en cualquier pantalla.</p>
             </div>
           </div>
           <div className='section2-2'>
