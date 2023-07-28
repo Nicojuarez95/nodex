@@ -10,6 +10,9 @@ import { faInstagram } from '@fortawesome/free-brands-svg-icons';
 import emailjs from '@emailjs/browser';
 import Swal from "sweetalert2";
 import { useState, useRef } from "react";
+import persona1 from "../src/Img/persona1.png"
+import persona2 from "../src/Img/persona2.png"
+import persona3 from "../src/Img/persona3.png"
 import './App.css';
 
 function App() {
@@ -116,16 +119,16 @@ function App() {
           </div>
           <div className='section2-2'>
             <div className='testimonio'>
-              <img className='img-testimonio' src={dominio} alt="" />
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero, mollitia nihil. Quasi, atque ut quaerat amet excepturi rerum veritatis incidunt quidem.</p>
+              <img className='img-testimonio' src={persona1} alt="" />
+              <p>Recomiendo encarecidamente a los chicos para crear sus paginas. El enfoque en el detalle y la comprensión de mis necesidades comerciales fue excepcional. ¡El resultado final superó mis expectativas!</p>
             </div>
             <div className='testimonio'>
-              <img className='img-testimonio' src={dominio} alt="" />
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero, mollitia nihil. Quasi, atque ut quaerat amet excepturi rerum veritatis incidunt quidem.</p>
+              <img className='img-testimonio' src={persona2} alt="" />
+              <p>Estoy muy satisfecho con la página que me crearon. Captaron perfectamente mi marca y la experiencia del usuario es increíble. Sinceramente los recomiendo mucho!</p>
             </div>
             <div className='testimonio'>
-              <img className='img-testimonio' src={dominio} alt="" />
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero, mollitia nihil. Quasi, atque ut quaerat amet excepturi rerum veritatis incidunt quidem.</p>
+              <img className='img-testimonio' src={persona3} alt="" />
+              <p>Elegir Proyecto Web para mi negocio fue acertado. Profesionalismo, creatividad y excelente comunicación. Los recomiendo a cualquiera que busque calidad en diseño web.</p>
             </div>
           </div>
           
@@ -133,15 +136,15 @@ function App() {
       </main>
       <footer>
         <div className='redes'>
-                <a href="#">
+                <a href="https://www.facebook.com/proyectowebb" target='_blank'>
                   <FontAwesomeIcon icon={faFacebookF} style={{ width: '50px', height: '50px' }}/>
                 </a>
-                <a href="#">
+                <a href="https://www.instagram.com/proyecto.webb/" target='_blank'>
                   <FontAwesomeIcon icon={faInstagram} style={{ width: '50px', height: '50px' }}/>
                 </a>
         </div>
         <div className='copi'>
-          <p>PROYECTO WEB- Todos los derechos reservados</p>
+          <p><span>PROYECTO WEB</span> - 2023 Todos los derechos reservados ©</p>
         </div>
       </footer>
     </div>
