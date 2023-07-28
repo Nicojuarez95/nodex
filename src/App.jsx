@@ -13,6 +13,7 @@ import { useState, useRef } from "react";
 import persona1 from "../src/Img/persona1.png"
 import persona2 from "../src/Img/persona2.png"
 import persona3 from "../src/Img/persona3.png"
+import persona4 from "../src/Img/persona4.png"
 import './App.css';
 
 function App() {
@@ -114,7 +115,7 @@ function App() {
             </div>
             <div className='ventajas'>
               <img src={responsive} alt="" />
-              <p>Experiencia óptima en todos los dispositivos. Nuestros diseños son completamente Responsive para que tus clientes disfruten de tu web en cualquier pantalla.</p>
+              <p>Nuestros diseños son completamente Responsive para que tus clientes disfruten de tu web en cualquier pantalla.</p>
             </div>
           </div>
           <div className='section2-2'>
@@ -128,6 +129,10 @@ function App() {
             </div>
             <div className='testimonio'>
               <img className='img-testimonio' src={persona3} alt="" />
+              <p>Elegir Proyecto Web para mi negocio fue acertado. Profesionalismo, creatividad y excelente comunicación. Los recomiendo a cualquiera que busque calidad en diseño web.</p>
+            </div>
+            <div className='testimonio' id='testimonio4'>
+              <img className='img-testimonio' src={persona4} alt="" />
               <p>Elegir Proyecto Web para mi negocio fue acertado. Profesionalismo, creatividad y excelente comunicación. Los recomiendo a cualquiera que busque calidad en diseño web.</p>
             </div>
           </div>

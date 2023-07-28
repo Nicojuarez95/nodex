@@ -129,6 +129,9 @@ span{
   font-weight: 600;
   color: rgb(255, 255, 255);
 }
+#testimonio4{
+  display: none;
+}
 @media (min-width: 320px) and (max-width: 750px) {
   .section1-1{
    display: none;
@@ -151,6 +154,11 @@ span{
   .dominio{
     width: 40% !important;
   }
+  .section2-2{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    }
   .seo{
     width: 65% !important;
     margin-top: 0px;
@@ -159,5 +167,15 @@ span{
   .testimonio{
    font-size: .5rem;
    padding: 5px;
+   width: 48%;
+  }
+  #testimonio4{
+    display: flex;
+  }
+  #testimonio4 img{
+    width: 33% !important;
+  }
+  .section1{
+    background-position: top;
   }
 }
