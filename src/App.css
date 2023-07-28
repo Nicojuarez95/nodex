@@ -123,13 +123,8 @@ footer{
     margin-top: 0px;
     margin-bottom: 4px;
   }
-  .section2-2{
-    flex-direction: column;
-  }
   .testimonio{
-   width: 100%;
-  }
-  footer{
-    margin-top: 105vh;
+   font-size: .5rem;
+   padding: 5px;
   }
 }

@@ -79,7 +79,7 @@ function App() {
               <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero, mollitia nihil. Quasi, atque ut quaerat amet excepturi rerum veritatis incidunt quidem.</p>
             </div>
           </div>
-
+          
         </section>
       </main>
       <footer>
