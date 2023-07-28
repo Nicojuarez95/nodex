@@ -5,6 +5,7 @@
 }
 .App-header img{
   width: 140px;
+  object-fit: cover;
 }
 
 .section1{
