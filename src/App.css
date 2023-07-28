@@ -23,7 +23,7 @@ form h2{
 }
 .section1{
   background-image: url(./Img/fondo.npg.webp);
-  background-size: contain;  
+  background-size: cover;  
   height: 90vh;
   display: flex;
   padding-top: 3vh;
