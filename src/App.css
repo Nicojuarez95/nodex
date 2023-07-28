@@ -177,5 +177,6 @@ span{
   }
   .section1{
     background-position: top;
+    background-size: cover;
   }
 }
