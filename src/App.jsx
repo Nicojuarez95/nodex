@@ -133,7 +133,7 @@ function App() {
             </div>
             <div className='testimonio' id='testimonio4'>
               <img className='img-testimonio' src={persona4} alt="" />
-              <p>Elegir Proyecto Web para mi negocio fue acertado. Profesionalismo, creatividad y excelente comunicación. Los recomiendo a cualquiera que busque calidad en diseño web.</p>
+              <p>Estoy muy feliz con mi página web, le doy las gracias a los chicos de proyecto Web por hacer realidad una meta que tenia, totalmente recomendables!</p>
             </div>
           </div>
           
