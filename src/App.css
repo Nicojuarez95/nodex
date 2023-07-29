@@ -156,11 +156,14 @@ span{
   width: 100%;
   text-decoration: none;
 }
+#btn-pixel{
+  margin: auto;
+}
 button {
   --color: #560bad;
   font-family: inherit;
   display: inline-block;
-  width: 18em;
+  width: 15.2em;
   height: 2.6em;
   line-height: 2.5em;
   margin: 20px;
@@ -288,6 +291,7 @@ button {
   .review .review-slider{
     margin-right: 2rem;
     margin-left: 2rem;
+    padding: 40px 5px;
   }
   .review .slide p{
     font-size: 1rem;
