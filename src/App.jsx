@@ -1,4 +1,4 @@
-import logo from '../src/Img/favicon.png';
+import logo from '../src/Img/Logo PW Horizontal Blanco - Proyecto Web.png';
 import imgHero from "../src/Img/imgHero.png"
 import dominio from "../src/Img/dominio.png"
 import responsive from "../src/Img/responsive.png"
@@ -14,7 +14,8 @@ import persona1 from "../src/Img/persona1.png"
 import persona2 from "../src/Img/persona2.png"
 import persona3 from "../src/Img/persona3.png"
 import './App.css';
-import "./script.js"
+import React, { useEffect } from 'react';
+import Swiper from 'swiper';
 
 function App() {
   const formInitialDetails = {
@@ -53,6 +54,30 @@ function App() {
         )
       });
   };
+
+  useEffect(() => {
+    // Inicializa Swiper cuando el componente se monta
+    const swiper = new Swiper('.review-slider', {
+      spaceBetween: 10,
+      grabCursor: true,
+      loop: true,
+      centeredSlides: true,
+      autoplay: {
+        delay: 5500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+    });
+
+    // Limpia Swiper cuando el componente se desmonta
+    return () => {
+      swiper.destroy();
+    };
+  }, []); 
+
   return (
     <div className="App">
       <header className="App-header">
@@ -135,69 +160,69 @@ function App() {
 
         <section class="review" id="review">
 
-        <div class="swiper review-slider">
-          <div class="swiper-wrapper">
-
-              <div class="swiper-slide slide">
-                <h2 class="heading">Comentarios de clientes</h2>
-                <i class="fas fa-quote-right"></i>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda eligendi sint dolorum, magni esse suscipit quia ab quos neque repudiandae omnis quo aliquam dolore temporibus libero vel voluptas velit porro!</p>
-                <div class="user">
-                    <img src={persona1} alt=""/>
-                    <div class="user-info">
-                      <h3>nombre de cliente</h3>
-                      <div class="stars">
-                          <i class="fas fa-star"></i>
-                          <i class="fas fa-star"></i>
-                          <i class="fas fa-star"></i>
-                          <i class="fas fa-star"></i>
-                          <i class="fas fa-star-half-alt"></i>
-                      </div>
+            <div class="swiper review-slider">
+              <div class="swiper-wrapper">
+                  <div class="swiper-slide slide">
+                    <h2 class="heading">Comentarios de clientes</h2>
+                    <i class="fas fa-quote-right"></i>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda eligendi sint dolorum, magni esse suscipit quia ab quos neque repudiandae omnis quo aliquam dolore temporibus libero vel voluptas velit porro!</p>
+                    <div class="user">
+                        <img src={persona1} alt=""/>
+                        <div class="user-info">
+                          <h3>nombre de cliente</h3>
+                          <div class="stars">
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star-half-alt"></i>
+                          </div>
+                        </div>
                     </div>
-                </div>
-              </div>
+                  </div>
 
-              <div class="swiper-slide slide">
-                <h2 class="heading">Comentarios de clientes</h2>
-                <i class="fas fa-quote-right"></i>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda eligendi sint dolorum, magni esse suscipit quia ab quos neque repudiandae omnis quo aliquam dolore temporibus libero vel voluptas velit porro!</p>
-                <div class="user">
-                    <img src={persona2} alt=""/>
-                    <div class="user-info">
-                      <h3>nombre de cliente</h3>
-                      <div class="stars">
-                          <i class="fas fa-star"></i>
-                          <i class="fas fa-star"></i>
-                          <i class="fas fa-star"></i>
-                          <i class="fas fa-star"></i>
-                          <i class="fas fa-star-half-alt"></i>
-                      </div>
+                  <div class="swiper-slide slide">
+                    <h2 class="heading">Comentarios de clientes</h2>
+                    <i class="fas fa-quote-right"></i>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda eligendi sint dolorum, magni esse suscipit quia ab quos neque repudiandae omnis quo aliquam dolore temporibus libero vel voluptas velit porro!</p>
+                    <div class="user">
+                        <img src={persona2} alt=""/>
+                        <div class="user-info">
+                          <h3>nombre de cliente</h3>
+                          <div class="stars">
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star-half-alt"></i>
+                          </div>
+                        </div>
                     </div>
-                </div>
-              </div>
+                  </div>
 
-              <div class="swiper-slide slide">
-                <h2 class="heading">Comentarios de clientes</h2>
-                <i class="fas fa-quote-right"></i>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda eligendi sint dolorum, magni esse suscipit quia ab quos neque repudiandae omnis quo aliquam dolore temporibus libero vel voluptas velit porro!</p>
-                <div class="user">
-                    <img src={persona3} alt=""/>
-                    <div class="user-info">
-                      <h3>nombre de cliente</h3>
-                      <div class="stars">
-                          <i class="fas fa-star"></i>
-                          <i class="fas fa-star"></i>
-                          <i class="fas fa-star"></i>
-                          <i class="fas fa-star"></i>
-                          <i class="fas fa-star-half-alt"></i>
-                      </div>
+                  <div class="swiper-slide slide">
+                    <h2 class="heading">Comentarios de clientes</h2>
+                    <i class="fas fa-quote-right"></i>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda eligendi sint dolorum, magni esse suscipit quia ab quos neque repudiandae omnis quo aliquam dolore temporibus libero vel voluptas velit porro!</p>
+                    <div class="user">
+                        <img src={persona3} alt=""/>
+                        <div class="user-info">
+                          <h3>nombre de cliente</h3>
+                          <div class="stars">
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star-half-alt"></i>
+                          </div>
+                        </div>
                     </div>
-                </div>
-              </div>
+                  </div>
 
-          </div>
-          <div class="swiper-pagination"></div>
-        </div>
+              </div>
+              <div class="swiper-pagination"></div>
+
+            </div>
 
           </section>
 
