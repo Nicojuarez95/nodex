@@ -84,6 +84,7 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
         
       </header>
+
       <main>
         <section className='section1'>
         <div className='section1-1'>
@@ -94,24 +95,24 @@ function App() {
         <div className='section1-2'>
           <form onSubmit={handleSubmit} ref={form}>
             <h2>Dejanos tu consulta</h2>
-          <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label">Nombre</label>
-            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Ej:José Lopez" name="user_name" onChange={(e) => onFormUpdate('firstName', e.target.value)}/>
+          <div className="mb-3">
+            <label for="exampleFormControlInput1" className="form-label">Nombre</label>
+            <input type="text" className="form-control" id="exampleFormControlInput1" placeholder="Ej:José Lopez" name="user_name" onChange={(e) => onFormUpdate('firstName', e.target.value)}/>
           </div>
-          <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label">Celular</label>
-            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Ej:+54 3584834859" name="user_phone" onChange={(e) => onFormUpdate('phone', e.target.value)}/> 
+          <div className="mb-3">
+            <label for="exampleFormControlInput1" className="form-label">Celular</label>
+            <input type="text" className="form-control" id="exampleFormControlInput1" placeholder="Ej:+54 3584834859" name="user_phone" onChange={(e) => onFormUpdate('phone', e.target.value)}/> 
           </div>
-          <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label">Email</label>
-            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Ej:nombre@ejemplo.com" name="user_email" onChange={(e) => onFormUpdate('email', e.target.value)} />
+          <div className="mb-3">
+            <label for="exampleFormControlInput1" className="form-label">Email</label>
+            <input type="email" className="form-control" id="exampleFormControlInput1" placeholder="Ej:nombre@ejemplo.com" name="user_email" onChange={(e) => onFormUpdate('email', e.target.value)} />
           </div>
-          <div class="mb-3">
-            <label for="exampleFormControlTextarea1" class="form-label">Mensaje/Consulta</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="message" onChange={(e) => onFormUpdate('message', e.target.value)}></textarea>
+          <div className="mb-3">
+            <label for="exampleFormControlTextarea1" className="form-label">Mensaje/Consulta</label>
+            <textarea className="form-control" id="exampleFormControlTextarea1" rows="3" name="message" onChange={(e) => onFormUpdate('message', e.target.value)}></textarea>
           </div>
-          <div class="col-auto">
-              <button id="btn-pixel" type="submit" class="btn btn-primary mb-3"><span>{buttonText}</span></button>
+          <div className="col-auto">
+              <button id="btn-pixel" type="submit" className="btn btn-primary mb-3"><span>{buttonText}</span></button>
           </div>
           {
                       status.message &&
@@ -158,69 +159,69 @@ function App() {
           </div>
         </section>
 
-        <section class="review" id="review">
+        <section className="review" id="review">
 
-            <div class="swiper review-slider">
-              <div class="swiper-wrapper">
-                  <div class="swiper-slide slide">
-                    <h2 class="heading">Comentarios de clientes</h2>
-                    <i class="fas fa-quote-right"></i>
+            <div className="swiper review-slider">
+              <div className="swiper-wrapper">
+                  <div className="swiper-slide slide">
+                    <h2 className="heading">Comentarios de clientes</h2>
+                    <i className="fas fa-quote-right"></i>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda eligendi sint dolorum, magni esse suscipit quia ab quos neque repudiandae omnis quo aliquam dolore temporibus libero vel voluptas velit porro!</p>
-                    <div class="user">
+                    <div className="user">
                         <img src={persona1} alt=""/>
-                        <div class="user-info">
+                        <div className="user-info">
                           <h3>nombre de cliente</h3>
-                          <div class="stars">
-                              <i class="fas fa-star"></i>
-                              <i class="fas fa-star"></i>
-                              <i class="fas fa-star"></i>
-                              <i class="fas fa-star"></i>
-                              <i class="fas fa-star-half-alt"></i>
+                          <div className="stars">
+                              <i className="fas fa-star"></i>
+                              <i className="fas fa-star"></i>
+                              <i className="fas fa-star"></i>
+                              <i className="fas fa-star"></i>
+                              <i className="fas fa-star-half-alt"></i>
                           </div>
                         </div>
                     </div>
                   </div>
 
-                  <div class="swiper-slide slide">
-                    <h2 class="heading">Comentarios de clientes</h2>
-                    <i class="fas fa-quote-right"></i>
+                  <div className="swiper-slide slide">
+                    <h2 className="heading">Comentarios de clientes</h2>
+                    <i className="fas fa-quote-right"></i>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda eligendi sint dolorum, magni esse suscipit quia ab quos neque repudiandae omnis quo aliquam dolore temporibus libero vel voluptas velit porro!</p>
-                    <div class="user">
+                    <div className="user">
                         <img src={persona2} alt=""/>
-                        <div class="user-info">
+                        <div className="user-info">
                           <h3>nombre de cliente</h3>
-                          <div class="stars">
-                              <i class="fas fa-star"></i>
-                              <i class="fas fa-star"></i>
-                              <i class="fas fa-star"></i>
-                              <i class="fas fa-star"></i>
-                              <i class="fas fa-star-half-alt"></i>
+                          <div className="stars">
+                              <i className="fas fa-star"></i>
+                              <i className="fas fa-star"></i>
+                              <i className="fas fa-star"></i>
+                              <i className="fas fa-star"></i>
+                              <i className="fas fa-star-half-alt"></i>
                           </div>
                         </div>
                     </div>
                   </div>
 
-                  <div class="swiper-slide slide">
-                    <h2 class="heading">Comentarios de clientes</h2>
-                    <i class="fas fa-quote-right"></i>
+                  <div className="swiper-slide slide">
+                    <h2 className="heading">Comentarios de clientes</h2>
+                    <i className="fas fa-quote-right"></i>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda eligendi sint dolorum, magni esse suscipit quia ab quos neque repudiandae omnis quo aliquam dolore temporibus libero vel voluptas velit porro!</p>
-                    <div class="user">
+                    <div className="user">
                         <img src={persona3} alt=""/>
-                        <div class="user-info">
+                        <div classname="user-info">
                           <h3>nombre de cliente</h3>
-                          <div class="stars">
-                              <i class="fas fa-star"></i>
-                              <i class="fas fa-star"></i>
-                              <i class="fas fa-star"></i>
-                              <i class="fas fa-star"></i>
-                              <i class="fas fa-star-half-alt"></i>
+                          <div className="stars">
+                              <i className="fas fa-star"></i>
+                              <i className="fas fa-star"></i>
+                              <i className="fas fa-star"></i>
+                              <i className="fas fa-star"></i>
+                              <i className="fas fa-star-half-alt"></i>
                           </div>
                         </div>
                     </div>
                   </div>
 
               </div>
-              <div class="swiper-pagination"></div>
+              <div className="swiper-pagination"></div>
 
             </div>
 

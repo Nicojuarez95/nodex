@@ -291,10 +291,13 @@ button {
   .review .review-slider{
     margin-right: 2rem;
     margin-left: 2rem;
-    padding: 40px 5px;
+    padding: 40px 20px;
   }
   .review .slide p{
     font-size: 1rem;
+  }
+  #btn-pixel{
+    width: 100%;
   }
 }
 @media (min-width: 1151px) and (max-width: 1750px) {
