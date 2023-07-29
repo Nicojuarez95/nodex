@@ -14,6 +14,8 @@
     />
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
+    <meta name="facebook-domain-verification" content="guy7q3z7sodxcq5l2yrkq2rvcwe0ly" />
     <!-- Meta Pixel Code -->
     <script>
       !function(f,b,e,v,n,t,s)
@@ -36,15 +38,11 @@
   <body>
     <noscript></noscript>
     <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
+    <script>
+      document.getElementById('btn-pixel').addEventListener('click', function() {
+        // Activa el píxel aquí con el evento "Clic en Botón"
+        fbq('track', 'ClicEnBoton');
+      });
+    </script>
   </body>
 </html>

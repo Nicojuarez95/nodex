@@ -86,7 +86,7 @@ function App() {
             <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="message" onChange={(e) => onFormUpdate('message', e.target.value)}></textarea>
           </div>
           <div class="col-auto">
-              <button type="submit" class="btn btn-primary mb-3"><span>{buttonText}</span></button>
+              <button id="btn-pixel" type="submit" class="btn btn-primary mb-3"><span>{buttonText}</span></button>
           </div>
           {
                       status.message &&
