@@ -181,3 +181,15 @@ span{
     background-size: cover;
   }
 }
+@media (min-height: 320px) and (max-height: 750px) {
+  .section1{
+    padding-top: 0;
+    height: 120vh;
+  }
+  .section2-1{
+    height: 35vh;
+  }
+  .section2-2{
+    height: 55vh;
+  }
+}
