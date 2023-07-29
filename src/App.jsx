@@ -100,6 +100,7 @@ function App() {
         </section>
 
         <section className='section2'>
+
           <div className='section2-1'>
             <div className='ventajas'>
               <img className='dominio' src={dominio} alt="" />
@@ -123,40 +124,102 @@ function App() {
                   <button>Reunión gratuita</button>
                 </a>
           </div>
-          <div className='section2-2'>
-            <div className='testimonio'>
-              <img className='img-testimonio' src={persona1} alt="" />
-              <p>Recomiendo encarecidamente a los chicos para crear sus paginas. El enfoque en el detalle y la comprensión de mis necesidades comerciales fue excepcional. ¡El resultado final superó mis expectativas!</p>
-            </div>
-            <div className='testimonio'>
-              <img className='img-testimonio' src={persona2} alt="" />
-              <p>Estoy muy satisfecho con la página que me crearon. Captaron perfectamente mi marca y la experiencia del usuario es increíble. Sinceramente los recomiendo mucho!</p>
-            </div>
-            <div className='testimonio'>
-              <img className='img-testimonio' src={persona3} alt="" />
-              <p>Elegir Proyecto Web para mi negocio fue acertado. Profesionalismo, creatividad y excelente comunicación. Los recomiendo a cualquiera que busque calidad en diseño web.</p>
-            </div>
-            <div className='testimonio' id='testimonio4'>
-              <img className='img-testimonio' src={persona4} alt="" />
-              <p>Estoy muy feliz con mi página web, le doy las gracias a los chicos de proyecto Web por hacer realidad una meta que tenia, totalmente recomendables!</p>
-            </div>
+          <section className='section3'>
+          <div className='quienesSomos'>
+
           </div>
-          
+          <div className='proyectos'>
+
+          </div>
         </section>
+
+        <section class="review" id="review">
+
+<div class="swiper review-slider">
+   <div class="swiper-wrapper">
+
+      <div class="swiper-slide slide">
+         <h2 class="heading">Comentarios de clientes</h2>
+         <i class="fas fa-quote-right"></i>
+         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda eligendi sint dolorum, magni esse suscipit quia ab quos neque repudiandae omnis quo aliquam dolore temporibus libero vel voluptas velit porro!</p>
+         <div class="user">
+            <img src={persona1} alt=""/>
+            <div class="user-info">
+               <h3>nombre de cliente</h3>
+               <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <div class="swiper-slide slide">
+         <h2 class="heading">Comentarios de clientes</h2>
+         <i class="fas fa-quote-right"></i>
+         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda eligendi sint dolorum, magni esse suscipit quia ab quos neque repudiandae omnis quo aliquam dolore temporibus libero vel voluptas velit porro!</p>
+         <div class="user">
+            <img src={persona2} alt=""/>
+            <div class="user-info">
+               <h3>nombre de cliente</h3>
+               <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <div class="swiper-slide slide">
+         <h2 class="heading">Comentarios de clientes</h2>
+         <i class="fas fa-quote-right"></i>
+         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda eligendi sint dolorum, magni esse suscipit quia ab quos neque repudiandae omnis quo aliquam dolore temporibus libero vel voluptas velit porro!</p>
+         <div class="user">
+            <img src={persona3} alt=""/>
+            <div class="user-info">
+               <h3>nombre de cliente</h3>
+               <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+               </div>
+            </div>
+         </div>
+      </div>
+
+   </div>
+   <div class="swiper-pagination"></div>
+</div>
+
+</section>
+
+          <footer>
+            <div className='redes'>
+                    <a href="https://www.facebook.com/proyectowebb" target='_blank'>
+                      <FontAwesomeIcon icon={faFacebookF} style={{ width: '50px', height: '50px' }}/>
+                    </a>
+                    <a href="https://www.instagram.com/proyecto.webb/" target='_blank'>
+                      <FontAwesomeIcon icon={faInstagram} style={{ width: '50px', height: '50px' }}/>
+                    </a>
+            </div>
+            <div className='copi'>
+              <p><span>PROYECTO WEB</span> - 2023 Todos los derechos reservados ©</p>
+            </div>
+          </footer>
+        </section>
+        <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+        <script src="script.js"></script>
       </main>
-      <footer>
-        <div className='redes'>
-                <a href="https://www.facebook.com/proyectowebb" target='_blank'>
-                  <FontAwesomeIcon icon={faFacebookF} style={{ width: '50px', height: '50px' }}/>
-                </a>
-                <a href="https://www.instagram.com/proyecto.webb/" target='_blank'>
-                  <FontAwesomeIcon icon={faInstagram} style={{ width: '50px', height: '50px' }}/>
-                </a>
-        </div>
-        <div className='copi'>
-          <p><span>PROYECTO WEB</span> - 2023 Todos los derechos reservados ©</p>
-        </div>
-      </footer>
+      
     </div>
   );
 }
