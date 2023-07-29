@@ -289,8 +289,8 @@ button {
 }
 @media (min-width: 320px) and (max-width: 1150px) {
   .review .review-slider{
-    margin-right: 3rem;
-    margin-left: 3rem;
+    margin-right: 2rem;
+    margin-left: 2rem;
     padding: 40px 5px;
   }
   .review .slide p{
