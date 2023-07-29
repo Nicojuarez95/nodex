@@ -13,8 +13,8 @@ import { useState, useRef } from "react";
 import persona1 from "../src/Img/persona1.png"
 import persona2 from "../src/Img/persona2.png"
 import persona3 from "../src/Img/persona3.png"
-import persona4 from "../src/Img/persona4.png"
 import './App.css';
+import "./script.js"
 
 function App() {
   const formInitialDetails = {
@@ -135,71 +135,71 @@ function App() {
 
         <section class="review" id="review">
 
-<div class="swiper review-slider">
-   <div class="swiper-wrapper">
+        <div class="swiper review-slider">
+          <div class="swiper-wrapper">
 
-      <div class="swiper-slide slide">
-         <h2 class="heading">Comentarios de clientes</h2>
-         <i class="fas fa-quote-right"></i>
-         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda eligendi sint dolorum, magni esse suscipit quia ab quos neque repudiandae omnis quo aliquam dolore temporibus libero vel voluptas velit porro!</p>
-         <div class="user">
-            <img src={persona1} alt=""/>
-            <div class="user-info">
-               <h3>nombre de cliente</h3>
-               <div class="stars">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star-half-alt"></i>
-               </div>
-            </div>
-         </div>
-      </div>
+              <div class="swiper-slide slide">
+                <h2 class="heading">Comentarios de clientes</h2>
+                <i class="fas fa-quote-right"></i>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda eligendi sint dolorum, magni esse suscipit quia ab quos neque repudiandae omnis quo aliquam dolore temporibus libero vel voluptas velit porro!</p>
+                <div class="user">
+                    <img src={persona1} alt=""/>
+                    <div class="user-info">
+                      <h3>nombre de cliente</h3>
+                      <div class="stars">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star-half-alt"></i>
+                      </div>
+                    </div>
+                </div>
+              </div>
 
-      <div class="swiper-slide slide">
-         <h2 class="heading">Comentarios de clientes</h2>
-         <i class="fas fa-quote-right"></i>
-         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda eligendi sint dolorum, magni esse suscipit quia ab quos neque repudiandae omnis quo aliquam dolore temporibus libero vel voluptas velit porro!</p>
-         <div class="user">
-            <img src={persona2} alt=""/>
-            <div class="user-info">
-               <h3>nombre de cliente</h3>
-               <div class="stars">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star-half-alt"></i>
-               </div>
-            </div>
-         </div>
-      </div>
+              <div class="swiper-slide slide">
+                <h2 class="heading">Comentarios de clientes</h2>
+                <i class="fas fa-quote-right"></i>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda eligendi sint dolorum, magni esse suscipit quia ab quos neque repudiandae omnis quo aliquam dolore temporibus libero vel voluptas velit porro!</p>
+                <div class="user">
+                    <img src={persona2} alt=""/>
+                    <div class="user-info">
+                      <h3>nombre de cliente</h3>
+                      <div class="stars">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star-half-alt"></i>
+                      </div>
+                    </div>
+                </div>
+              </div>
 
-      <div class="swiper-slide slide">
-         <h2 class="heading">Comentarios de clientes</h2>
-         <i class="fas fa-quote-right"></i>
-         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda eligendi sint dolorum, magni esse suscipit quia ab quos neque repudiandae omnis quo aliquam dolore temporibus libero vel voluptas velit porro!</p>
-         <div class="user">
-            <img src={persona3} alt=""/>
-            <div class="user-info">
-               <h3>nombre de cliente</h3>
-               <div class="stars">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star-half-alt"></i>
-               </div>
-            </div>
-         </div>
-      </div>
+              <div class="swiper-slide slide">
+                <h2 class="heading">Comentarios de clientes</h2>
+                <i class="fas fa-quote-right"></i>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda eligendi sint dolorum, magni esse suscipit quia ab quos neque repudiandae omnis quo aliquam dolore temporibus libero vel voluptas velit porro!</p>
+                <div class="user">
+                    <img src={persona3} alt=""/>
+                    <div class="user-info">
+                      <h3>nombre de cliente</h3>
+                      <div class="stars">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star-half-alt"></i>
+                      </div>
+                    </div>
+                </div>
+              </div>
 
-   </div>
-   <div class="swiper-pagination"></div>
-</div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
 
-</section>
+          </section>
 
           <footer>
             <div className='redes'>
@@ -215,9 +215,6 @@ function App() {
             </div>
           </footer>
         </section>
-        <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
-
-        <script src="script.js"></script>
       </main>
       
     </div>

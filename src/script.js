@@ -1,4 +1,5 @@
 import Swiper from 'swiper';
+
 let swiper = new Swiper(".review-slider", {
     spaceBetween: 10,
     grabCursor:true,
@@ -14,11 +15,11 @@ let swiper = new Swiper(".review-slider", {
     },
 });
 
-// let accordions = document.querySelectorAll('.faqs .row .content .box');
+let accordions = document.querySelectorAll('.faqs .row .content .box');
 
-// accordions.forEach(acco =>{
-//     acco.onclick = () =>{
-//         accordions.forEach(subAcco => {subAcco.classList.remove('active')});
-//         acco.classList.add('active');
-//     }
-// })
+accordions.forEach(acco =>{
+    acco.onclick = () =>{
+        accordions.forEach(subAcco => {subAcco.classList.remove('active')});
+        acco.classList.add('active');
+    }
+})
