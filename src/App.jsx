@@ -68,14 +68,14 @@ function App() {
 
         <div className='section1-2'>
           <form onSubmit={handleSubmit} ref={form}>
-            <h2>Dejanos tu feedback</h2>
+            <h2>Dejanos tu consulta</h2>
           <div class="mb-3">
             <label for="exampleFormControlInput1" class="form-label">Nombre</label>
             <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Ej:José Lopez" name="user_name" onChange={(e) => onFormUpdate('firstName', e.target.value)}/>
           </div>
           <div class="mb-3">
             <label for="exampleFormControlInput1" class="form-label">Celular</label>
-            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Ej:3584834859" name="user_phone" onChange={(e) => onFormUpdate('phone', e.target.value)}/> 
+            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Ej:+54 3584834859" name="user_phone" onChange={(e) => onFormUpdate('phone', e.target.value)}/> 
           </div>
           <div class="mb-3">
             <label for="exampleFormControlInput1" class="form-label">Email</label>
@@ -117,6 +117,11 @@ function App() {
               <img src={responsive} alt="" />
               <p>Nuestros diseños son completamente Responsive para que tus clientes disfruten de tu web en cualquier pantalla.</p>
             </div>
+          </div>
+          <div>
+          <a href="#" className='boton'>
+                  <button>Reunión gratuita</button>
+                </a>
           </div>
           <div className='section2-2'>
             <div className='testimonio'>
