@@ -15,15 +15,23 @@
   transition: .2s linear;
 }
 
-.App-header{
-  background-color: rgb(0, 0, 0);
+#app-header{
+  background-color: rgb(0, 0, 0) !important;
   height: 10vh;
   display: flex;
   padding-left: 2VW;
 }
-.App-header img{
+#app-header img{
   width: 310px;
   object-fit: contain;
+}
+.nav-link{
+  color: white !important;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+#navbarNav{
+  padding-right: 5%;
 }
 label{
   color: rgb(248, 248, 248);
@@ -159,7 +167,7 @@ span{
 #btn-pixel{
   margin: auto;
 }
-button {
+.botonhero2 {
   --color: #560bad;
   font-family: inherit;
   display: inline-block;
@@ -178,7 +186,7 @@ button {
   color: var(--color);
  }
  
- button:before {
+ .botonhero2:before {
   content: "";
   position: absolute;
   z-index: -1;
@@ -188,22 +196,22 @@ button {
   border-radius: 50%;
  }
  
- button:hover {
+ .botonhero2:hover {
   color: #fff;
  }
  
- button:before {
+ .botonhero2:before {
   top: 100%;
   left: 100%;
   transition: all .7s;
  }
  
- button:hover:before {
+ .botonhero2:hover:before {
   top: -30px;
   left: -30px;
  }
  
- button:active:before {
+ .botonhero2:active:before {
   background: #3a0ca3;
   transition: background 0s;
  }
@@ -287,6 +295,21 @@ button {
   font-size: 1.3rem;
   color: var(--primary);
 }
+.navbar-toggler[aria-expanded="true"] {
+  background-color: #f3f3f3;
+  border-color: #2d1eff; 
+}
+
+.navbar-collapse.show {
+  background-color: #00000086;
+  padding: 8px;
+  border-radius: 15px;
+}
+.swiper-pagination{
+  display: flex;
+  justify-content: center;
+  width: 90%;
+}
 @media (min-width: 320px) and (max-width: 1150px) {
   .review .review-slider{
     margin-right: 2rem;
@@ -308,9 +331,14 @@ button {
   .review .slide p{
     font-size: 1.3rem;
   }
+
 }
 
 @media (min-width: 320px) and (max-width: 750px) {
+  #app-header img{
+    width: 245px;
+    object-fit: contain;
+  }
   .section1-1{
    display: none;
   }

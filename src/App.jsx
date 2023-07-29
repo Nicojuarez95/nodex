@@ -80,10 +80,27 @@ function App() {
 
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        
-      </header>
+      <nav className="navbar navbar-expand-lg" id='app-header'>
+        <div className="container-fluid">
+          <img src={logo} className="App-logo" alt="logo" />
+          <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span className="navbar-toggler-icon"></span>
+          </button>
+          <div className="collapse navbar-collapse" id="navbarNav">
+            <ul className="navbar-nav ms-auto">
+              <li className="nav-item">
+                <a className="nav-link active" aria-current="page" href="#">Quienes Somos</a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="#">Proyectos</a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="#">testimonios</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
 
       <main>
         <section className='section1'>
@@ -147,7 +164,7 @@ function App() {
           </div>
           <div>
           <a href="#" className='boton'>
-                  <button>Reunión gratuita</button>
+                  <button className='botonhero2'>Reunión gratuita</button>
                 </a>
           </div>
           <section className='section3'>
@@ -221,7 +238,11 @@ function App() {
                   </div>
 
               </div>
-              <div className="swiper-pagination"></div>
+              <div className="swiper-pagination">
+              <span class="material-symbols-outlined">
+                swipe
+                </span>
+              </div>
 
             </div>
 
