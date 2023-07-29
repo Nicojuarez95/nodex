@@ -13,6 +13,9 @@ import { useState, useRef } from "react";
 import persona1 from "../src/Img/persona1.png"
 import persona2 from "../src/Img/persona2.png"
 import persona3 from "../src/Img/persona3.png"
+import hotel from "../src/Img/hotel.png"
+import soluciones from "./Img/solucionesElectricas.png"
+import fullfitness from "./Img/fullfitness.png"
 import './App.css';
 import React, { useEffect } from 'react';
 import Swiper from 'swiper';
@@ -89,13 +92,13 @@ function App() {
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav ms-auto">
               <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="#">Quienes Somos</a>
+                <a className="nav-link active" aria-current="page" href="#quienesSomos">Quienes Somos</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">Proyectos</a>
+                <a className="nav-link" href="#proyectos">Proyectos</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">testimonios</a>
+                <a className="nav-link" href="#review">testimonios</a>
               </li>
             </ul>
           </div>
@@ -147,19 +150,19 @@ function App() {
           <div className='section2-1'>
             <div className='ventajas'>
               <img className='dominio' src={dominio} alt="" />
-              <p>Tu Dominio Gratis por un año. Al elegir nuestro servicio, obtendrás un dominio sin costo adicional durante todo el primer año.</p>
+              <p>Tu Dominio Gratis por un año.</p>
             </div>
             <div className='ventajas'>
               <img src={diseño} alt="" />
-              <p>Impresiona con un Diseño Personalizado. Destaca entre la competencia con una página web única y atractiva que represente la esencia de tu marca.</p>
+              <p>Impresiona con un Diseño Personalizado.</p>
             </div>
             <div className='ventajas'>
               <img className='seo' src={seo} alt="" />
-              <p>Aumenta tu visibilidad con SEO. Nuestro equipo experto en SEO trabajará para posicionar tu sitio web en los primeros resultados de búsqueda.</p>
+              <p>Aumenta tu visibilidad con SEO.</p>
             </div>
             <div className='ventajas'>
               <img src={responsive} alt="" />
-              <p>Nuestros diseños son completamente Responsive para que tus clientes disfruten de tu web en cualquier pantalla.</p>
+              <p>Para todos los dispositivos</p>
             </div>
           </div>
           <div>
@@ -168,11 +171,27 @@ function App() {
                 </a>
           </div>
           <section className='section3'>
-          <div className='quienesSomos'>
+          <div className='quienesSomos' id='quienesSomos'>
 
+                <div className='infoImgQuienesSomos'>
+                    <div className="info">
+                      <h3>Sobre nosotros</h3>
+                      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum, nesciunt eos quo non quaerat nam ducimus! Voluptatem a tempora enim sint aut repudiandae facilis molestias! Aperiam deleniti esse sit pariatur. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur totam eaque nisi voluptas ea laboriosam nemo tenetur, perferendis dolore autem quam voluptate iste reprehenderit natus quos sed fuga nam tempore. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur ipsa totam nulla nesciunt, illo odit tempore porro veritatis nihil. Expedita, voluptas. Est quis quos, sint quisquam maxime quo magnam dolorum.</p>
+                    </div>
+                    <div className="info2">
+                        <img src={persona3} alt="" />
+                    </div>
+                </div>
           </div>
-          <div className='proyectos'>
+          <div className='proyectos' id='proyectos'>
+              <h2>Algunos de nuestros proyectos</h2>
+              <div className='proyectosCont'>
+                  <div className='itemProyecto'><a href="https://nicojuarez95.github.io/hotel-landing/" target='_blank'><img className='imgProyectos' src={hotel} alt="" /></a></div>
 
+                  <div className='itemProyecto'><a href="https://www.solucioneselectricaslc.com.ar/" target='_blank'><img className='imgProyectos' src={soluciones} alt="" /></a></div>
+
+                  <div className='itemProyecto'><a href="https://www.fullfitnesslc.com.ar/" target='_blank'><img className='imgProyectos' src={fullfitness} alt="" /></a></div>
+              </div>
           </div>
         </section>
 
