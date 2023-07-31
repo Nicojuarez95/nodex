@@ -381,6 +381,9 @@ span{
   #btn-pixel{
     width: 100%;
   }
+  .imgTecnos{
+    width: 300px !important;
+  }
 }
 @media (min-width: 1151px) and (max-width: 1750px) {
   .review .review-slider{
