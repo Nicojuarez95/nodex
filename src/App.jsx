@@ -19,6 +19,7 @@ import fullfitness from "./Img/fullfitness.png"
 import './App.css';
 import React, { useEffect } from 'react';
 import Swiper from 'swiper';
+import tecno from "./Img/tecnologias.png"
 
 function App() {
   const formInitialDetails = {
@@ -98,7 +99,7 @@ function App() {
                 <a className="nav-link" href="#proyectos">Proyectos</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#review">testimonios</a>
+                <a className="nav-link" href="#review">Testimonios</a>
               </li>
             </ul>
           </div>
@@ -177,6 +178,7 @@ function App() {
                     <div className="info">
                       <h3>Sobre nosotros</h3>
                       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum, nesciunt eos quo non quaerat nam ducimus! Voluptatem a tempora enim sint aut repudiandae facilis molestias! Aperiam deleniti esse sit pariatur. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur totam eaque nisi voluptas ea laboriosam nemo tenetur, perferendis dolore autem quam voluptate iste reprehenderit natus quos sed fuga nam tempore. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur ipsa totam nulla nesciunt, illo odit tempore porro veritatis nihil. Expedita, voluptas. Est quis quos, sint quisquam maxime quo magnam dolorum.</p>
+                      <img className='imgTecnos' src={tecno} alt="" />
                     </div>
                     <div className="info2">
                         <img src={persona3} alt="" />
@@ -184,7 +186,7 @@ function App() {
                 </div>
           </div>
           <div className='proyectos' id='proyectos'>
-              <h2>Algunos de nuestros proyectos</h2>
+              <h2>NUESTROS PROYECTOS</h2>
               <div className='proyectosCont'>
                   <div className='itemProyecto'><a href="https://nicojuarez95.github.io/hotel-landing/" target='_blank'><img className='imgProyectos' src={hotel} alt="" /></a></div>
 
