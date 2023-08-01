@@ -71,7 +71,6 @@ function App() {
   };
 
   useEffect(() => {
-    // Inicializa Swiper cuando el componente se monta
     const swiper = new Swiper('.review-slider', {
       spaceBetween: 10,
       grabCursor: true,
