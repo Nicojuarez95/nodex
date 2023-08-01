@@ -36,18 +36,28 @@ label{
   color: rgb(248, 248, 248);
 }
 form{
-  background-color: rgba(0, 0, 0, 0.788);
+  background-color: rgb(0, 0, 0);
   padding: 15px;
   border-radius: 15px;
-  box-shadow: 0px 0px 15px 0px white;
+  padding: 20px 40px ;
 }
 form h2{
+  font-size: 1.75rem;
   text-align: center;
   color: aliceblue;
 }
+.form-label{
+  margin: 0;
+}
+.bienvenida{
+  background-color: black;
+  color: rgb(235, 235, 235);
+  font-size: 20px;
+  padding: 8px;
+}
 .section1{
-  background-image: url(./Img/fondo.npg.webp);
-  background-size: cover;  
+  background-image: url(./Img/altumcode-dMUt0X3f59Q-unsplash-scaled.jpg);
+  background-size: cover;
   height: 90vh;
   display: flex;
   padding-top: 3vh;
@@ -56,24 +66,42 @@ form h2{
   width: 50%;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   padding: 3vw 3vw 0px 3vw;
   gap: 25px;
+  padding-top: 14vh;
 }
 .imgHero{
   width: 70%;
   margin-top: 30px;
 }
+.textHero1{
+  color: rgb(248, 248, 248);
+  text-align: start;
+  font-size: 2.7rem;
+  font-weight: 600;
+}
 .textHero{
   color: rgb(248, 248, 248);
-  text-align: center;
-  font-size: 1.2rem;
+  text-align: start;
+  font-size: 1.3rem;
+  margin-top: -25px;
 }
+.botonhero3 {
+  background-color: #FB0928;
+  width: 13.2em;
+  height: 2.6em;
+  font-size: 20px;
+  border-radius: 20px;
+  font-weight: 500;
+  color: white;
+  margin-top: 25px;
+ }
+
 .section1-2{
   width: 50%;
   padding: 120px 10vw 0px 10vw;
 }
-
 .section2{
   height: 85vh;
   width: 100%;
@@ -167,8 +195,21 @@ span{
   width: 100%;
   text-decoration: none;
 }
+.col-auto{
+  display: flex;
+  justify-content: center;
+}
 #btn-pixel{
   margin: auto;
+  width: 50%;
+  height: 3rem;
+  border-radius: 20px;
+  background-color: #333;
+  border: 0px;
+  font-weight: 0;
+}
+#btn-pixel:hover{
+  background-color: #1b1b1b;
 }
 .botonhero2 {
   --color: #560bad;
@@ -368,6 +409,19 @@ span{
   display: flex;
   justify-content: center;
   width: 90%;
+}
+.btnWpp{
+  position: fixed;
+  z-index: 999;
+  left: 1vw;
+  bottom: 5vh;
+}
+.btnWpp img {
+  width: 110px;
+}
+.btnWpp:hover{
+  scale: 1.2;
+  transition: 1;
 }
 @media (min-width: 320px) and (max-width: 1150px) {
   .review .review-slider{

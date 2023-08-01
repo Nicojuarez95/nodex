@@ -20,6 +20,7 @@ import './App.css';
 import React, { useEffect } from 'react';
 import Swiper from 'swiper';
 import tecno from "./Img/tecnologias.png"
+import wppbtn from "../src/Img/descarga-removebg-preview.png"
 
 function App() {
   const formInitialDetails = {
@@ -29,7 +30,7 @@ function App() {
     message: ''
   }
   const [formDetails, setFormDetails] = useState(formInitialDetails);
-  const [buttonText, setButtonText] = useState('Enviar');
+  const [buttonText, setButtonText] = useState('Enviar consulta');
   const [status, setStatus] = useState({});
   const form = useRef();
 
@@ -84,6 +85,7 @@ function App() {
 
   return (
     <div className="App">
+      <a className='btnWpp' href="https://api.whatsapp.com/send?phone=5493584405266&text=Hola! Me contacto por: " target='_blank'> <img src={wppbtn} alt="" /></a>
       <nav className="navbar navbar-expand-lg" id='app-header'>
         <div className="container-fluid">
           <img src={logo} className="App-logo" alt="logo" />
@@ -109,13 +111,20 @@ function App() {
       <main>
         <section className='section1'>
         <div className='section1-1'>
-          <img className='imgHero' src={imgHero} alt="" />
-          <p className='textHero'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi distinctio obcaecati debitis at impedit? Placeat nesciunt ullam, labore necessitatibus veniam voluptate odit, harum, inventore architecto dolore obcaecati eum quisquam suscipit. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic inventore tenetur laborum molestiae placeat fuga, totam eveniet similique veritatis laboriosam vero dolorem dolores minima nisi nulla quia impedit ipsum autem? Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi nemo ad cumque, odio ipsum quasi distinctio aliquam nisi nulla officia adipisci sit quo nam. Voluptates excepturi sunt repudiandae a sapiente.</p>
+          <h3 className='bienvenida'>Bienvenidos a Proeycto Web</h3>
+          {/* <img className='imgHero' src={imgHero} alt="" /> */}
+          <p className='textHero1'>Diseña y desarrolla tu página web,
+            somos expertos creativos!</p>
+          <p className='textHero'>Somos especialistas en  desarrollo, diseño web,
+            y gráfica publicitaria.</p>
+          <a href="#" className='boton1'>
+                  <button className='botonhero3'>Reunión gratuita</button>
+                </a>
         </div>
 
         <div className='section1-2'>
           <form onSubmit={handleSubmit} ref={form}>
-            <h2>Dejanos tu consulta</h2>
+            <h2>¿Tenes dudas? Envianos un mensaje:</h2>
           <div className="mb-3">
             <label for="exampleFormControlInput1" className="form-label">Nombre</label>
             <input type="text" className="form-control" id="exampleFormControlInput1" placeholder="Ej:José Lopez" name="user_name" onChange={(e) => onFormUpdate('firstName', e.target.value)}/>
