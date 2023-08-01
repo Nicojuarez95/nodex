@@ -86,7 +86,6 @@ function App() {
       },
     });
 
-    // Limpia Swiper cuando el componente se desmonta
     return () => {
       swiper.destroy();
     };
