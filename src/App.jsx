@@ -1,9 +1,9 @@
 import logo from '../src/Img/Logo PW Horizontal Blanco - Proyecto Web.png';
 import imgHero from "../src/Img/imgHero.png"
-import dominio from "../src/Img/dominio.png"
-import responsive from "../src/Img/responsive.png"
-import seo from "../src/Img/seo.png"
-import diseño from "../src/Img/diseño.png"
+import dominio from "../src/Img/image 5.png"
+import responsive from "../src/Img/image 4.png"
+import seo from "../src/Img/image 1.png"
+import diseño from "../src/Img/image 3.png"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebookF } from '@fortawesome/free-brands-svg-icons';
 import { faInstagram } from '@fortawesome/free-brands-svg-icons';
@@ -19,8 +19,18 @@ import fullfitness from "./Img/fullfitness.png"
 import './App.css';
 import React, { useEffect } from 'react';
 import Swiper from 'swiper';
-import tecno from "./Img/tecnologias.png"
+import node from "./Img/Node.js_logo.svg"
 import wppbtn from "../src/Img/descarga-removebg-preview.png"
+import vector from "./Img/essential.png"
+import figma from "./Img/Figma 1.png"
+import visual from "./Img/Visual 1.png"
+import html from "./Img/HTML5_logo_and_wordmark.svg-removebg-preview.png"
+import css from "./Img/css-removebg-preview.png"
+import javascript from "./Img/javascript-removebg-preview.png"
+import react from "./Img/React.svg-removebg-preview.png"
+import express from "./Img/express-removebg-preview.png"
+import mongo from "./Img/mongo-removebg-preview.png"
+import git from "./Img/git-removebg-preview.png"
 
 function App() {
   const formInitialDetails = {
@@ -68,7 +78,7 @@ function App() {
       loop: true,
       centeredSlides: true,
       autoplay: {
-        delay: 5500,
+        delay: 5000,
         disableOnInteraction: false,
       },
       pagination: {
@@ -101,7 +111,7 @@ function App() {
                 <a className="nav-link" href="#proyectos">Proyectos</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#review">Testimonios</a>
+                <a className="nav-link" href="#review">Clientes</a>
               </li>
             </ul>
           </div>
@@ -110,15 +120,16 @@ function App() {
 
       <main>
         <section className='section1'>
+        <div className='filtro'></div>
         <div className='section1-1'>
-          <h3 className='bienvenida'>Bienvenidos a Proeycto Web</h3>
+          <h3 className='bienvenida'>Bienvenidos a Proyecto Web</h3>
           {/* <img className='imgHero' src={imgHero} alt="" /> */}
           <p className='textHero1'>Diseña y desarrolla tu página web,
             somos expertos creativos!</p>
-          <p className='textHero'>Somos especialistas en  desarrollo, diseño web,
-            y gráfica publicitaria.</p>
+          <p className='textHero'>Nos dedicamos al mundo tecnológico, trabajamos en desarrollo, diseño web, y gráfica publicitaria.</p>
           <a href="#" className='boton1'>
-                  <button className='botonhero3'>Reunión gratuita</button>
+                  <button className='botonhero3'>Reunión gratuita 
+                  <img className='vector' src={vector} alt="" /></button>
                 </a>
         </div>
 
@@ -142,7 +153,7 @@ function App() {
             <textarea className="form-control" id="exampleFormControlTextarea1" rows="3" name="message" onChange={(e) => onFormUpdate('message', e.target.value)}></textarea>
           </div>
           <div className="col-auto">
-              <button id="btn-pixel" type="submit" className="btn btn-primary mb-3"><span>{buttonText}</span></button>
+              <button id="btn-pixel" type="submit" className="btn btn-primary mb-3"><span>{buttonText} <img className='vector' src={vector} alt="" /></span></button>
           </div>
           {
                       status.message &&
@@ -160,24 +171,40 @@ function App() {
           <div className='section2-1'>
             <div className='ventajas'>
               <img className='dominio' src={dominio} alt="" />
-              <p>Tu Dominio Gratis por un año.</p>
+              <div className='contVentajasText'>
+                <p className='tituloVentaja'>Dominio gratis + SSL</p>
+                <p className='textVent'>Licencia x 1 año y
+                  certificado de seguridad</p>
+              </div>
             </div>
             <div className='ventajas'>
               <img src={diseño} alt="" />
-              <p>Impresiona con un Diseño Personalizado.</p>
+              <div className='contVentajasText'>
+                <p className='tituloVentaja'>Diseño Personalizado</p>
+                <p className='textVent'>Impresioná a tus clientes
+                  con tu sitio</p>
+              </div> 
             </div>
             <div className='ventajas'>
               <img className='seo' src={seo} alt="" />
-              <p>Aumenta tu visibilidad con SEO.</p>
+              <div className='contVentajasText'>
+                <p className='tituloVentaja'>Posicionamiento SEO</p>
+                <p className='textVent'>Aumentá tu visibilidad y
+                  llega a más usuarios</p>
+              </div>
             </div>
             <div className='ventajas'>
               <img src={responsive} alt="" />
-              <p>Para todos los dispositivos</p>
+              <div className='contVentajasText'>
+                <p className='tituloVentaja'>Diseño Responsive</p>
+                <p className='textVent'>Adaptado a todos los
+                  dispositivos</p>
+              </div>
             </div>
           </div>
           <div>
           <a href="#" className='boton'>
-                  <button className='botonhero2'>Reunión gratuita</button>
+                  <button className='botonhero2'>Contactarme<img className='vector' src={vector} alt="" /></button>
                 </a>
           </div>
           <section className='section3'>
@@ -185,17 +212,39 @@ function App() {
 
                 <div className='infoImgQuienesSomos'>
                     <div className="info">
-                      <h3>Sobre nosotros</h3>
-                      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum, nesciunt eos quo non quaerat nam ducimus! Voluptatem a tempora enim sint aut repudiandae facilis molestias! Aperiam deleniti esse sit pariatur. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur totam eaque nisi voluptas ea laboriosam nemo tenetur, perferendis dolore autem quam voluptate iste reprehenderit natus quos sed fuga nam tempore. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur ipsa totam nulla nesciunt, illo odit tempore porro veritatis nihil. Expedita, voluptas. Est quis quos, sint quisquam maxime quo magnam dolorum.</p>
-                      <img className='imgTecnos' src={tecno} alt="" />
+                      <p className='sobreNosotrosTitulo'>Sobre Nosotros</p>
+                      <p className='sobreNosotrosTitulo2'>¡Tu experiencia digital comienza ahora!</p>
+                      <p className='textNosotros'>¡Somos un equipo apasionado por el diseño UX/UI y desarrolladoro de código, vamos a hacer que cada click sea una experiencia alucinante! Nos dedicamos a crear sitios webs, landing pages, e-commerce y mucho más, y lo hacemos con una obsesión por los detalles y un entusiasmo contagioso en cada paso del proceso. <br /><br />
+
+                        Somos Nicolas Juarez y Bruno Rossetti, dos apasionados de la magia digital.
+                        Mientras Nico proviene del mundo de la informático como desarrollador web full stack, Bruno viene de una fusión entre la arquitectura y el diseño gráfico. <br /><br />
+
+                        ¿Quieres impulsar tu negocio hacia el éxito?
+                        ¡Nosotros nos encargamos de potenciar tu presencia online!</p>
                     </div>
                     <div className="info2">
                         <img src={persona3} alt="" />
                     </div>
                 </div>
           </div>
+          <div className="herramientas">
+            <p className='bordeGris'></p>
+            <p className='herramientasusadas'>Herramientas usadas</p>
+            <div className="contHerramientas">
+              <div className="herrameinta"><img className='imgHerr' src={figma} alt="" /><p className='nameHerr'>Figma</p></div>
+              <div className="herrameinta"><img className='imgHerr' src={visual} alt="" /><p className='nameHerr'>Visual Studio Code</p></div>
+              <div className="herrameinta"><img className='imgHerr' src={html} alt="" /><p className='nameHerr'>HTML5</p></div>
+              <div className="herrameinta"><img className='imgHerr' src={css} alt="" /><p className='nameHerr'>CSS3</p></div>
+              <div className="herrameinta"><img className='imgHerr' src={javascript} alt="" /><p className='nameHerr'>JavaScript</p></div>
+              <div className="herrameinta"><img className='imgHerr' src={react} alt="" /><p className='nameHerr'>React JS</p></div>
+              <div className="herrameinta"><img className='imgHerr' src={git} alt="" /><p className='nameHerr'>GIT</p></div>
+              <div className="herrameinta"><img className='imgHerr' src={express} alt="" /><p className='nameHerr'>Express JS</p></div>
+              <div className="herrameinta"><img className='imgHerr' src={node} alt="" /><p className='nameHerr'>Node JS</p></div>
+              <div className="herrameinta"><img className='imgHerr' src={mongo} alt="" /><p className='nameHerr'>Mongo DB</p></div>
+            </div>
+          </div>
           <div className='proyectos' id='proyectos'>
-              <h2>NUESTROS PROYECTOS</h2>
+              <h2 className='proyectosTitulo'>Últimos proyectos</h2>
               <div className='proyectosCont'>
                   <div className='itemProyecto'><a href="https://nicojuarez95.github.io/hotel-landing/" target='_blank'><img className='imgProyectos' src={hotel} alt="" /></a></div>
 
@@ -212,7 +261,7 @@ function App() {
               <div className="swiper-wrapper">
                   <div className="swiper-slide slide">
                     <h2 className="heading">Comentarios de clientes</h2>
-                    <i className="fas fa-quote-right"></i>
+                    {/* <i className="fas fa-quote-right"></i> */}
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda eligendi sint dolorum, magni esse suscipit quia ab quos neque repudiandae omnis quo aliquam dolore temporibus libero vel voluptas velit porro!</p>
                     <div className="user">
                         <img src={persona1} alt=""/>
@@ -231,7 +280,7 @@ function App() {
 
                   <div className="swiper-slide slide">
                     <h2 className="heading">Comentarios de clientes</h2>
-                    <i className="fas fa-quote-right"></i>
+                    {/* <i className="fas fa-quote-right"></i> */}
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda eligendi sint dolorum, magni esse suscipit quia ab quos neque repudiandae omnis quo aliquam dolore temporibus libero vel voluptas velit porro!</p>
                     <div className="user">
                         <img src={persona2} alt=""/>
@@ -250,7 +299,7 @@ function App() {
 
                   <div className="swiper-slide slide">
                     <h2 className="heading">Comentarios de clientes</h2>
-                    <i className="fas fa-quote-right"></i>
+                    {/* <i className="fas fa-quote-right"></i> */}
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda eligendi sint dolorum, magni esse suscipit quia ab quos neque repudiandae omnis quo aliquam dolore temporibus libero vel voluptas velit porro!</p>
                     <div className="user">
                         <img src={persona3} alt=""/>

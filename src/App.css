@@ -2,11 +2,14 @@
   --primary:#f5f5f4;
   --secondary:#7694b6;
   --black:#333;
-  --white:#fff;
+  --white:#030303;
   --box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.1);
 }
+main{
+  background-color: rgb(245, 245, 245)
+}
 *{
-  font-family: 'Monserrat', sans-serif;
+  font-family: 'Poppins', sans-serif;
   margin: 0; padding: 0;
   box-sizing: border-box;
   outline: none; border: none;
@@ -15,7 +18,7 @@
 }
 
 #app-header{
-  background-color: rgb(0, 0, 0) !important;
+  background-color: rgb(10, 10, 10) !important;
   height: 10vh;
   display: flex;
   padding-left: 2VW;
@@ -36,13 +39,13 @@ label{
   color: rgb(248, 248, 248);
 }
 form{
-  background-color: rgb(0, 0, 0);
+  background-color: rgb(10, 10, 10);
   padding: 15px;
-  border-radius: 15px;
+  border-radius: 10px;
   padding: 20px 40px ;
 }
 form h2{
-  font-size: 1.75rem;
+  font-size: 1.6rem;
   text-align: center;
   color: aliceblue;
 }
@@ -60,7 +63,14 @@ form h2{
   background-size: cover;
   height: 90vh;
   display: flex;
-  padding-top: 3vh;
+}
+.filtro{
+  width: 100%;
+  height: 90%;
+  position: absolute;
+  background-color: #030303;
+  filter: opacity(.5);
+  z-index: 1;
 }
 .section1-1{
   width: 50%;
@@ -70,6 +80,7 @@ form h2{
   padding: 3vw 3vw 0px 3vw;
   gap: 25px;
   padding-top: 14vh;
+  z-index: 2;
 }
 .imgHero{
   width: 70%;
@@ -101,44 +112,52 @@ form h2{
 .section1-2{
   width: 50%;
   padding: 120px 10vw 0px 10vw;
+  z-index: 2;
 }
 .section2{
   height: 85vh;
   width: 100%;
 }
 .section2-1{
-  background-color: rgb(179, 179, 179);
+  background-color: #111112;
   height: 30%;
   display: flex;
-  justify-content: space-around;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  gap: 5px;
+  justify-content: center;
+  padding-left: 5vw;
+  padding-right: 5vw;
 }
 .ventajas{
-  background-color: rgb(224, 224, 224);
   width: 24%;
   display: flex;
-  flex-direction: column;
   height: 100%;
   align-items: center;
   justify-content: space-evenly;
-  padding: 20px 10px 20px 10px;
   text-align: center;
   font-weight: 600;
+  color: white;
+}
+.tituloVentaja{
+  margin-bottom: 5px;
+  font-weight: 900;
+}
+.textVent{
+  font-size: .8rem;
+  font-weight: 100;
+}
+.contVentajasText{
+  width: 77%;
+  padding-left: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 .ventajas img{
-  width: 20%;
+  width: 22%;
   object-fit: contain;
+  background-color: white;
+  border-radius: 50%;
+  margin: 0;
 }
-.dominio{
-  width: 17% !important;
-}
-.seo{
-  margin-top: 10px;
-  width: 25% !important;
-}
-
 .section2-2{
   height: 70%;
   display: flex;
@@ -195,6 +214,10 @@ span{
   width: 100%;
   text-decoration: none;
 }
+.vector{
+  width: 30px;
+  margin-left: 10px;
+}
 .col-auto{
   display: flex;
   justify-content: center;
@@ -212,22 +235,22 @@ span{
   background-color: #1b1b1b;
 }
 .botonhero2 {
-  --color: #560bad;
+  background-color: #0080FF;
   font-family: inherit;
   display: inline-block;
-  width: 15.2em;
-  height: 2.6em;
+  width: 13.2em;
+  height: 3.6em;
   line-height: 2.5em;
-  margin: 20px;
+  margin-top: 90px;
   position: relative;
   overflow: hidden;
   border: 2px solid var(--color);
   transition: color .5s;
   z-index: 1;
   font-size: 17px;
-  border-radius: 6px;
+  border-radius: 15px;
   font-weight: 500;
-  color: var(--color);
+  color: white;
  }
  
  .botonhero2:before {
@@ -241,7 +264,8 @@ span{
  }
  
  .botonhero2:hover {
-  color: #fff;
+  color: #ffffff;
+  background-color: #0076ec;
  }
  
  .botonhero2:before {
@@ -260,16 +284,17 @@ span{
   transition: background 0s;
  }
  .section3{
-  height: 100vh;
-  background-color: rgb(243, 243, 243);
+  height: 160vh;
+  background-color: rgb(245, 245, 245)
  }
 .quienesSomos{
-  height: 60%;
+  height: 50%;
   background-color: rgb(238, 238, 238)(233, 233, 233);
   display: flex;
   width: 100%;
   flex-direction: column;
   align-items: center;
+  margin-top: -110px;
 }
 .infoImgQuienesSomos{
   width: 100%;
@@ -278,24 +303,79 @@ span{
   gap: 5px;
 }
 .info{
-  width: 50%;
+  width: 64%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
   text-align: center;
 }
-.info p{
+.sobreNosotrosTitulo{
+  text-align: start;
   width: 80%;
+  margin: 0;
+}
+.sobreNosotrosTitulo2{
+  text-align: start;
+  width: 80%;
+  font-size: 38px;
+  font-weight: 800;
+}
+.textNosotros{
+  width: 80%;
+  text-align: start;
+  font-weight: 550;
 }
 .info2{
-  width: 50%;
+  width: 36%;
   display: flex;
   justify-content: center;
-  padding: 6%;
+  padding: 5%;
 }
 .info2 img{
   object-fit: cover;
+}
+.herramientas{
+  margin-top: -50px;
+  height: 20%;
+  display: flex;
+  flex-direction: column;
+}
+.bordeGris{
+  margin-top: -50px;
+  background-color: rgb(245, 245, 245);
+  height: 20%;
+}
+.herramientasusadas{
+  margin-left: 6.4%;
+}
+.contHerramientas{
+  height: 70%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 1%;
+  padding-left: 4.4%;
+  padding-right: 4%;
+}
+.herrameinta{
+  width: 18%;
+  height: 25%;
+  background-color: #131313;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 1%;
+  padding-right: 1%;
+  align-items: center;
+}
+.imgHerr{
+  width: 70px;
+}
+.nameHerr{
+  color: white;
+  margin: 0;
+  font-size: 1.2rem;
 }
 .proyectos{
   height: 40%;
@@ -303,6 +383,12 @@ span{
   flex-direction: column;
   align-items: center;
   width: 100%;
+}
+.proyectosTitulo{
+  margin-bottom: 5px;
+  margin-top: 35px;
+  font-weight: 800;
+  font-size: 1.5rem;
 }
 .proyectosCont{
   display: flex;
@@ -313,29 +399,33 @@ span{
 
 .itemProyecto{
   width: 30%;
-  height: 85%;
+  height: 75%;
+  display: flex;
+  align-items: center;
+  padding: 30px;
+}
+.itemProyecto a{
+  display: flex;
+  justify-content: center;
 }
 .imgProyectos {
-  object-fit: contain;
-  width: 100%;
-  height: 100%;
+  width: 90%;
 }
  /*review
  /* review */
 
 .review{
-  background-image: url(../src/Img/fondo.npg.webp);
-  background-repeat: no-repeat;
+  background-image: url(../src/Img/Portada\ Facebook\ copia\ -\ Sierras\ de\ Calamuchita\ 1.png);
   background-size: cover;
   width: 100%;
-  height: 38rem;
+  height: 32rem;
   position: relative;
-  margin: 4rem 0;
+  margin: 3rem 0;
   display: flex;
 }
 
 .review .review-slider{
-  background: var(--secondary);
+  background-color: white;
   padding: 2rem;
   width: 100%;
   height: 110%;
