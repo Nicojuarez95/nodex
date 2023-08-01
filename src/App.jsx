@@ -118,49 +118,49 @@ function App() {
 
       <main>
         <section className='section1'>
-        <div className='filtro'></div>
-        <div className='section1-1'>
-          <h3 className='bienvenida'>Bienvenidos a Proyecto Web</h3>
-          {/* <img className='imgHero' src={imgHero} alt="" /> */}
-          <p className='textHero1'>Diseña y desarrolla tu página web,
-            somos expertos creativos!</p>
-          <p className='textHero'>Nos dedicamos al mundo tecnológico, trabajamos en desarrollo, diseño web, y gráfica publicitaria.</p>
-          <a href="#" className='boton1'>
-                  <button className='botonhero3'>Reunión gratuita 
-                  <img className='vector' src={vector} alt="" /></button>
-                </a>
-        </div>
+          <div className='filtro'></div>
+          <div className='section1-1'>
+            <h3 className='bienvenida'>Bienvenidos a Proyecto Web</h3>
+            {/* <img className='imgHero' src={imgHero} alt="" /> */}
+            <p className='textHero1'>Diseña y desarrolla tu página web,
+              somos expertos creativos!</p>
+            <p className='textHero'>Nos dedicamos al mundo tecnológico, trabajamos en desarrollo, diseño web, y gráfica publicitaria.</p>
+            <a href="#" className='boton1'>
+                    <button className='botonhero3'>Reunión gratuita 
+                    <img className='vector' src={vector} alt="" /></button>
+                  </a>
+          </div>
 
-        <div className='section1-2'>
-          <form onSubmit={handleSubmit} ref={form}>
-            <h2>¿Tenes dudas? Envianos un mensaje:</h2>
-          <div className="mb-3">
-            <label for="exampleFormControlInput1" className="form-label">Nombre</label>
-            <input type="text" className="form-control" id="exampleFormControlInput1" placeholder="Ej:José Lopez" name="user_name" onChange={(e) => onFormUpdate('firstName', e.target.value)}/>
+          <div className='section1-2'>
+            <form onSubmit={handleSubmit} ref={form}>
+              <h2>¿Tenes dudas? Envianos un mensaje:</h2>
+            <div className="mb-3">
+              <label for="exampleFormControlInput1" className="form-label">Nombre</label>
+              <input type="text" className="form-control" id="exampleFormControlInput1" placeholder="Ej:José Lopez" name="user_name" onChange={(e) => onFormUpdate('firstName', e.target.value)}/>
+            </div>
+            <div className="mb-3">
+              <label for="exampleFormControlInput1" className="form-label">Celular</label>
+              <input type="text" className="form-control" id="exampleFormControlInput1" placeholder="Ej:+54 3584834859" name="user_phone" onChange={(e) => onFormUpdate('phone', e.target.value)}/> 
+            </div>
+            <div className="mb-3">
+              <label for="exampleFormControlInput1" className="form-label">Email</label>
+              <input type="email" className="form-control" id="exampleFormControlInput1" placeholder="Ej:nombre@ejemplo.com" name="user_email" onChange={(e) => onFormUpdate('email', e.target.value)} />
+            </div>
+            <div className="mb-3">
+              <label for="exampleFormControlTextarea1" className="form-label">Mensaje/Consulta</label>
+              <textarea className="form-control" id="exampleFormControlTextarea1" rows="3" name="message" onChange={(e) => onFormUpdate('message', e.target.value)}></textarea>
+            </div>
+            <div className="col-auto">
+                <button id="btn-pixel" type="submit" className="btn btn-primary mb-3"><span>{buttonText} <img className='vector' src={vector} alt="" /></span></button>
+            </div>
+            {
+                        status.message &&
+                        <div>
+                          <p className={status.success === false ? "danger" : "success"}>{status.message}</p>
+                        </div>
+                      }
+                      </form>
           </div>
-          <div className="mb-3">
-            <label for="exampleFormControlInput1" className="form-label">Celular</label>
-            <input type="text" className="form-control" id="exampleFormControlInput1" placeholder="Ej:+54 3584834859" name="user_phone" onChange={(e) => onFormUpdate('phone', e.target.value)}/> 
-          </div>
-          <div className="mb-3">
-            <label for="exampleFormControlInput1" className="form-label">Email</label>
-            <input type="email" className="form-control" id="exampleFormControlInput1" placeholder="Ej:nombre@ejemplo.com" name="user_email" onChange={(e) => onFormUpdate('email', e.target.value)} />
-          </div>
-          <div className="mb-3">
-            <label for="exampleFormControlTextarea1" className="form-label">Mensaje/Consulta</label>
-            <textarea className="form-control" id="exampleFormControlTextarea1" rows="3" name="message" onChange={(e) => onFormUpdate('message', e.target.value)}></textarea>
-          </div>
-          <div className="col-auto">
-              <button id="btn-pixel" type="submit" className="btn btn-primary mb-3"><span>{buttonText} <img className='vector' src={vector} alt="" /></span></button>
-          </div>
-          {
-                      status.message &&
-                      <div>
-                        <p className={status.success === false ? "danger" : "success"}>{status.message}</p>
-                      </div>
-                    }
-                    </form>
-        </div>
         
         </section>
 
