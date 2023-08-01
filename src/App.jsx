@@ -134,32 +134,32 @@ function App() {
           <div className='section1-2'>
             <form onSubmit={handleSubmit} ref={form}>
               <h2>¿Tenes dudas? Envianos un mensaje:</h2>
-            <div className="mb-3">
-              <label for="exampleFormControlInput1" className="form-label">Nombre</label>
-              <input type="text" className="form-control" id="exampleFormControlInput1" placeholder="Ej:José Lopez" name="user_name" onChange={(e) => onFormUpdate('firstName', e.target.value)}/>
-            </div>
-            <div className="mb-3">
-              <label for="exampleFormControlInput1" className="form-label">Celular</label>
-              <input type="text" className="form-control" id="exampleFormControlInput1" placeholder="Ej:+54 3584834859" name="user_phone" onChange={(e) => onFormUpdate('phone', e.target.value)}/> 
-            </div>
-            <div className="mb-3">
-              <label for="exampleFormControlInput1" className="form-label">Email</label>
-              <input type="email" className="form-control" id="exampleFormControlInput1" placeholder="Ej:nombre@ejemplo.com" name="user_email" onChange={(e) => onFormUpdate('email', e.target.value)} />
-            </div>
-            <div className="mb-3">
-              <label for="exampleFormControlTextarea1" className="form-label">Mensaje/Consulta</label>
-              <textarea className="form-control" id="exampleFormControlTextarea1" rows="3" name="message" onChange={(e) => onFormUpdate('message', e.target.value)}></textarea>
-            </div>
-            <div className="col-auto">
-                <button id="btn-pixel" type="submit" className="btn btn-primary mb-3"><span>{buttonText} <img className='vector' src={vector} alt="" /></span></button>
-            </div>
+              <div className="mb-3">
+                <label for="exampleFormControlInput1" className="form-label">Nombre</label>
+                <input type="text" className="form-control" id="exampleFormControlInput1" placeholder="Ej:José Lopez" name="user_name" onChange={(e) => onFormUpdate('firstName', e.target.value)}/>
+              </div>
+              <div className="mb-3">
+                <label for="exampleFormControlInput1" className="form-label">Celular</label>
+                <input type="text" className="form-control" id="exampleFormControlInput1" placeholder="Ej:+54 3584834859" name="user_phone" onChange={(e) => onFormUpdate('phone', e.target.value)}/> 
+              </div>
+              <div className="mb-3">
+                <label for="exampleFormControlInput1" className="form-label">Email</label>
+                <input type="email" className="form-control" id="exampleFormControlInput1" placeholder="Ej:nombre@ejemplo.com" name="user_email" onChange={(e) => onFormUpdate('email', e.target.value)} />
+              </div>
+              <div className="mb-3">
+                <label for="exampleFormControlTextarea1" className="form-label">Mensaje/Consulta</label>
+                <textarea className="form-control" id="exampleFormControlTextarea1" rows="3" name="message" onChange={(e) => onFormUpdate('message', e.target.value)}></textarea>
+              </div>
+              <div className="col-auto">
+                  <button id="btn-pixel" type="submit" className="btn btn-primary mb-3"><span>{buttonText} <img className='vector' src={vector} alt="" /></span></button>
+              </div>
             {
                         status.message &&
                         <div>
                           <p className={status.success === false ? "danger" : "success"}>{status.message}</p>
                         </div>
                       }
-                      </form>
+            </form>
           </div>
         
         </section>
