@@ -31,6 +31,9 @@ main{
   font-weight: 600;
   font-size: 1.2rem;
 }
+.nav-link:hover{
+  color: #FB0928 !important;
+}
 #navbarNav{
   padding-right: 5%;
 }
@@ -41,12 +44,18 @@ form{
   background-color: rgb(10, 10, 10);
   padding: 15px;
   border-radius: 10px;
-  padding: 20px 40px ;
+  padding: 30px 40px ;
 }
 form h2{
   font-size: 1.6rem;
   text-align: center;
   color: aliceblue;
+}
+.col-auto{
+  display: flex;
+  align-items: end;
+  justify-content: end;
+  margin-top: 50px;
 }
 .form-label{
   margin: 0;
@@ -56,6 +65,13 @@ form h2{
   color: rgb(235, 235, 235);
   font-size: 20px;
   padding: 8px;
+}
+.email{
+  color: white;
+  margin-top: 10vh;
+}
+.imgEmail{
+  margin-right: 15px;
 }
 .section1{
   background-image: url(./Img/altumcode-dMUt0X3f59Q-unsplash-scaled.jpg);
@@ -84,6 +100,9 @@ form h2{
 .imgHero{
   width: 70%;
   margin-top: 30px;
+}
+input{
+  background-color: #0076ec;
 }
 .textHero1{
   color: rgb(248, 248, 248);
@@ -179,31 +198,7 @@ form h2{
   width: 50%;
   object-fit: cover;
 }
-footer{
-  background-color: rgb(59, 59, 59);
-  height: 15vh;
-  display: flex;
-}
-.redes{
-  display: flex;
-  width: 50%;
-  align-items: center;
-  gap: 15%;
-  padding-left: 5%;
-}
-.copi{
-  display: flex;
-  align-items: center;
-  width: 48%;
-  justify-content: end;
-}
-.copi p{
-  color: white;
-}
-span{
-  font-weight: 600;
-  color: rgb(255, 255, 255);
-}
+
 #testimonio4{
   display: none;
 }
@@ -219,6 +214,7 @@ span{
 }
 .col-auto{
   display: flex;
+  gap: 15px;
   justify-content: center;
 }
 #btn-pixel{
@@ -231,7 +227,7 @@ span{
   font-weight: 0;
 }
 #btn-pixel:hover{
-  background-color: #1b1b1b;
+  background-color: #FF0A2C;
 }
 .botonhero2 {
   background-color: #0080FF;
@@ -282,6 +278,55 @@ span{
   background: #3a0ca3;
   transition: background 0s;
  }
+ .botonhero4 {
+  background-color: #1A1A1A;
+  font-family: inherit;
+  display: inline-block;
+  width: 16.2em;
+  height: 4.6em;
+  line-height: 2.5em;
+  margin-top: 17%;
+  position: relative;
+  overflow: hidden;
+  border: 2px solid var(--color);
+  transition: color .5s;
+  z-index: 1;
+  font-size: 17px;
+  border-radius: 35px;
+  font-weight: 500;
+  color: white;
+ }
+ .botonhero4:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background: var(--color);
+  height: 150px;
+  width: 200px;
+  border-radius: 50%;
+ }
+ 
+ .botonhero4:hover {
+  color: #ffffff;
+  background-color: #292929;
+ }
+ 
+ .botonhero4:before {
+  top: 100%;
+  left: 100%;
+  transition: all .7s;
+ }
+ 
+ .botonhero4:hover:before {
+  top: -30px;
+  left: -30px;
+ }
+ 
+ .botonhero4:active:before {
+  background: #3a0ca3;
+  transition: background 0s;
+ }
+ 
  .section3{
   height: 160vh;
   background-color: rgb(245, 245, 245)
@@ -417,7 +462,7 @@ span{
   background-image: url(../src/Img/Portada\ Facebook\ copia\ -\ Sierras\ de\ Calamuchita\ 1.png);
   background-size: cover;
   width: 100%;
-  height: 32rem;
+  height: 25rem;
   position: relative;
   margin: 3rem 0;
   display: flex;
@@ -426,16 +471,24 @@ span{
 .review .review-slider{
   background-color: white;
   padding: 2rem;
-  width: 100%;
+  width: 70%;
   height: 110%;
   margin-top: -2rem;
-  margin-right: 50rem;
-  margin-left: 10rem;
-  padding-top: 6%;
+  margin-right: 40rem;
+  margin-left: 35rem;
+  padding-top: 3%;
   color: var(--white);
-  box-shadow: var(--box-shadow);
+  border-radius: 20px;
+  box-shadow: 2px 2px 15px;
 }
-
+.textoComentarios{
+  padding: 0 !important;
+  margin: 0;
+}
+.textoComent{
+  font-size: 1rem !important;
+  text-align: start;
+}
 .review .slide{
   text-align: center;
 }
@@ -461,17 +514,22 @@ span{
   display: flex;
   gap: 1.5rem;
   align-items: center;
-  justify-content: center;
+  justify-content: start;
   padding: 1rem 0;
   border-radius: .5rem;
 }
-
+#userInfo{
+  text-align: start;
+}
 
 .review .slide .user img{
-  height: 7rem;
-  width: 7rem;
+  height: 10rem;
+  width: 10rem;
   border-radius: 15%;
   object-fit: cover;
+  background-color: #afafaf;
+  border-radius: 50%;
+  padding: 20px;
 }
 
 .review .slide .user h3{
@@ -499,6 +557,11 @@ span{
   justify-content: center;
   width: 90%;
 }
+.vector-coment{
+  width: 100%;
+  height: 15px;
+  object-fit: contain;
+}
 .btnWpp{
   position: fixed;
   z-index: 999;
@@ -512,6 +575,52 @@ span{
   scale: 1.2;
   transition: 1;
 }
+.botonfinal{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  text-decoration: none;
+  margin-left: -40%;
+}
+footer{
+  height: 35vh;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(10, 10, 10);
+}
+.redes{
+  display: flex;
+  width: 100%;
+  height: 70%;
+}
+.copi{
+  display: flex;
+  width: 100%;
+  height: 30%;
+  justify-content: space-evenly;
+}
+.textFooter{
+  color: white;
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+.logoFoter{
+  object-fit: contain;
+}
+.divHr{
+  display: flex;
+  justify-content: center;
+}
+.hr{
+  height: 2px;
+  width: 90%;
+  background-color: white;
+  margin: 0 !important;
+  color: white !important;
+  border-top: none !important; 
+}
+
 @media (min-width: 320px) and (max-width: 1150px) {
   .review .review-slider{
     margin-right: 2rem;

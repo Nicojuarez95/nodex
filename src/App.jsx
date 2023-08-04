@@ -31,43 +31,45 @@ import react from "./Img/React.svg-removebg-preview.png"
 import express from "./Img/express-removebg-preview.png"
 import mongo from "./Img/mongo-removebg-preview.png"
 import git from "./Img/git-removebg-preview.png"
+import email from "./Img/vectorEmail.png"
+import vectorComent from "./Img/comentariosVector.png"
 
 function App() {
   const formInitialDetails = {
     firstName: '',
     email: '',
     phone: '',
-    message: ''
-  }
+    message: '',
+  };
+
   const [formDetails, setFormDetails] = useState(formInitialDetails);
   const [buttonText, setButtonText] = useState('Enviar consulta');
   const [status, setStatus] = useState({});
-  const form = useRef();
 
   const onFormUpdate = (category, value) => {
-      setFormDetails({
-        ...formDetails,
-        [category]: value
-      })
-  }
+    setFormDetails({
+      ...formDetails,
+      [category]: value,
+    });
+  };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('service_rtegbgd', 'template_sdggipt', form.current, '4hOqTm7TRau9xcy40')
-      .then((result) => {
-        Swal.fire(
-          'Mensaje enviado!',
-          'ProyectoWeb pronto se pondra en contacto!',
-          'success'
-        )
-      }, (error) => {
-        Swal.fire(
-          'Algo salio manl!',
-          'Intenta de nuevo mas tarde',
-          'error'
-        )
-      });
+    emailjs
+      .sendForm('service_rtegbgd', 'template_sdggipt', e.target, '4hOqTm7TRau9xcy40')
+      .then(
+        (result) => {
+          Swal.fire('Mensaje enviado!', 'ProyectoWeb pronto se pondra en contacto!', 'success');
+        },
+        (error) => {
+          Swal.fire('Algo salio mal!', 'Intenta de nuevo mas tarde', 'error');
+        }
+      );
+  };
+
+  const handleCancel = () => {
+    setFormDetails(formInitialDetails);
   };
 
   useEffect(() => {
@@ -89,8 +91,11 @@ function App() {
     return () => {
       swiper.destroy();
     };
-  }, []); 
+  }, []);
 
+
+
+ 
   return (
     <div className="App">
       <a className='btnWpp' href="https://api.whatsapp.com/send?phone=5493584405266&text=Hola! Me contacto por: " target='_blank'> <img src={wppbtn} alt="" /></a>
@@ -129,30 +134,82 @@ function App() {
                     <button className='botonhero3'>Reunión gratuita 
                     <img className='vector' src={vector} alt="" /></button>
                   </a>
+            <p className='email'><img className='imgEmail' src={email} alt="" />proyectowebdevelopment@gmail.com</p>
           </div>
 
           <div className='section1-2'>
-            <form onSubmit={handleSubmit} ref={form}>
-              <h2>¿Tenes dudas? Envianos un mensaje:</h2>
-              <div className="mb-3">
-                <label for="exampleFormControlInput1" className="form-label">Nombre</label>
-                <input type="text" className="form-control" id="exampleFormControlInput1" placeholder="Ej:José Lopez" name="user_name" onChange={(e) => onFormUpdate('firstName', e.target.value)}/>
-              </div>
-              <div className="mb-3">
-                <label for="exampleFormControlInput1" className="form-label">Celular</label>
-                <input type="text" className="form-control" id="exampleFormControlInput1" placeholder="Ej:+54 3584834859" name="user_phone" onChange={(e) => onFormUpdate('phone', e.target.value)}/> 
-              </div>
-              <div className="mb-3">
-                <label for="exampleFormControlInput1" className="form-label">Email</label>
-                <input type="email" className="form-control" id="exampleFormControlInput1" placeholder="Ej:nombre@ejemplo.com" name="user_email" onChange={(e) => onFormUpdate('email', e.target.value)} />
-              </div>
-              <div className="mb-3">
-                <label for="exampleFormControlTextarea1" className="form-label">Mensaje/Consulta</label>
-                <textarea className="form-control" id="exampleFormControlTextarea1" rows="3" name="message" onChange={(e) => onFormUpdate('message', e.target.value)}></textarea>
-              </div>
-              <div className="col-auto">
-                  <button id="btn-pixel" type="submit" className="btn btn-primary mb-3"><span>{buttonText} <img className='vector' src={vector} alt="" /></span></button>
-              </div>
+          <form onSubmit={handleSubmit}>
+            <h2>¿Tenés dudas? Envianos un mensaje:</h2>
+            <div className="mb-3">
+              <label htmlFor="firstName" className="form-label">
+                Nombre
+              </label>
+              <input
+                type="text"
+                className="form-control"
+                id="firstName"
+                required
+                placeholder="Ej:José Lopez"
+                name="user_name"
+                value={formDetails.firstName}
+                onChange={(e) => onFormUpdate('firstName', e.target.value)}
+                style={{ backgroundColor: '#666', color:"white", borderRadius:"0", border:"none" }}
+              />
+            </div>
+            <div className="mb-3">
+              <label htmlFor="phone" className="form-label">
+                Celular
+              </label>
+              <input
+                type="text"
+                className="form-control"
+                id="phone"
+                placeholder="Ej:+54 3584834859"
+                name="user_phone"
+                required
+                value={formDetails.phone}
+                onChange={(e) => onFormUpdate('phone', e.target.value)}
+                style={{ backgroundColor: '#666', color:"white", borderRadius:"0", border:"none" }}
+              />
+            </div>
+            <div className="mb-3">
+              <label htmlFor="email" className="form-label">
+                Email
+              </label>
+              <input
+                type="email"
+                className="form-control"
+                id="email"
+                placeholder="Ej:nombre@ejemplo.com"
+                name="user_email"
+                required
+                value={formDetails.email}
+                onChange={(e) => onFormUpdate('email', e.target.value)}
+                style={{ backgroundColor: '#666', color:"white", borderRadius:"0", border:"none" }}
+              />
+            </div>
+            <div className="mb-3">
+              <label htmlFor="message" className="form-label">
+                Mensaje
+              </label>
+              <textarea
+                className="form-control"
+                id="message"
+                rows="3"
+                name="message"
+                value={formDetails.message}
+                onChange={(e) => onFormUpdate('message', e.target.value)}
+                style={{ backgroundColor: '#666', color:"white", borderRadius:"0", border:"none" }}
+              ></textarea>
+            </div>
+            <div className="col-auto">
+              <button type="submit" id="btn-pixel" className="btn btn-primary mb-3">
+                {buttonText} <img className='vector' src={vector} alt="" />
+              </button>
+              <button type="button" id="btn-pixel" className="btn btn-primary mb-3" onClick={handleCancel}>
+                Cancelar <img className='vector' src={vector} alt="" />
+              </button>
+            </div>
             {
                         status.message &&
                         <div>
@@ -201,9 +258,9 @@ function App() {
             </div>
           </div>
           <div>
-          <a href="#" className='boton'>
-                  <button className='botonhero2'>Contactarme<img className='vector' src={vector} alt="" /></button>
-                </a>
+            <a href="#" className='boton'>
+                    <button className='botonhero2'>Contactarme<img className='vector' src={vector} alt="" /></button>
+                  </a>
           </div>
           <section className='section3'>
           <div className='quienesSomos' id='quienesSomos'>
@@ -257,85 +314,70 @@ function App() {
 
             <div className="swiper review-slider">
               <div className="swiper-wrapper">
-                  <div className="swiper-slide slide">
-                    <h2 className="heading">Comentarios de clientes</h2>
-                    {/* <i className="fas fa-quote-right"></i> */}
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda eligendi sint dolorum, magni esse suscipit quia ab quos neque repudiandae omnis quo aliquam dolore temporibus libero vel voluptas velit porro!</p>
+              <div className="swiper-slide slide">
                     <div className="user">
                         <img src={persona1} alt=""/>
-                        <div className="user-info">
+                        <div classname="user-info" id='userInfo'>
                           <h3>nombre de cliente</h3>
-                          <div className="stars">
-                              <i className="fas fa-star"></i>
-                              <i className="fas fa-star"></i>
-                              <i className="fas fa-star"></i>
-                              <i className="fas fa-star"></i>
-                              <i className="fas fa-star-half-alt"></i>
-                          </div>
+                          <p className='textoComentarios'>Diseño de adssda</p>
                         </div>
                     </div>
+                    {/* <i className="fas fa-quote-right"></i> */}
+                    <p className='textoComent'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda eligendi sint dolorum, magni esse suscipit quia ab quos neque repudiandae omnis quo aliquam dolore temporibus libero vel voluptas velit porro! <br /><img className='vector-coment' src={vectorComent} alt=""/></p>
                   </div>
 
                   <div className="swiper-slide slide">
-                    <h2 className="heading">Comentarios de clientes</h2>
-                    {/* <i className="fas fa-quote-right"></i> */}
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda eligendi sint dolorum, magni esse suscipit quia ab quos neque repudiandae omnis quo aliquam dolore temporibus libero vel voluptas velit porro!</p>
                     <div className="user">
                         <img src={persona2} alt=""/>
-                        <div className="user-info">
+                        <div classname="user-info" id='userInfo'>
                           <h3>nombre de cliente</h3>
-                          <div className="stars">
-                              <i className="fas fa-star"></i>
-                              <i className="fas fa-star"></i>
-                              <i className="fas fa-star"></i>
-                              <i className="fas fa-star"></i>
-                              <i className="fas fa-star-half-alt"></i>
-                          </div>
+                          <p className='textoComentarios'>Diseño de adssda</p>
                         </div>
                     </div>
+                    {/* <i className="fas fa-quote-right"></i> */}
+                    <p className='textoComent'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda eligendi sint dolorum, magni esse suscipit quia ab quos neque repudiandae omnis quo aliquam dolore temporibus libero vel voluptas velit porro! <br /><img className='vector-coment' src={vectorComent} alt=""/></p>
                   </div>
 
                   <div className="swiper-slide slide">
-                    <h2 className="heading">Comentarios de clientes</h2>
-                    {/* <i className="fas fa-quote-right"></i> */}
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda eligendi sint dolorum, magni esse suscipit quia ab quos neque repudiandae omnis quo aliquam dolore temporibus libero vel voluptas velit porro!</p>
                     <div className="user">
                         <img src={persona3} alt=""/>
-                        <div classname="user-info">
+                        <div classname="user-info" id='userInfo'>
                           <h3>nombre de cliente</h3>
-                          <div className="stars">
-                              <i className="fas fa-star"></i>
-                              <i className="fas fa-star"></i>
-                              <i className="fas fa-star"></i>
-                              <i className="fas fa-star"></i>
-                              <i className="fas fa-star-half-alt"></i>
-                          </div>
+                          <p className='textoComentarios'>Diseño de adssda</p>
                         </div>
                     </div>
+                    {/* <i className="fas fa-quote-right"></i> */}
+                    <p className='textoComent'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda eligendi sint dolorum, magni esse suscipit quia ab quos neque repudiandae omnis quo aliquam dolore temporibus libero vel voluptas velit porro! <br /><img className='vector-coment' src={vectorComent} alt=""/></p>
+                    
                   </div>
 
-              </div>
-              <div className="swiper-pagination">
-              <span class="material-symbols-outlined">
-                swipe
-                </span>
               </div>
 
             </div>
-
+                  <a href="#" className='botonfinal'>
+                        <button className='botonhero4'>Reunión gratuita<img className='vector' src={vector} alt="" /></button>
+                      </a>
+                          
           </section>
 
           <footer>
             <div className='redes'>
-                    <a href="https://www.facebook.com/proyectowebb" target='_blank'>
-                      <FontAwesomeIcon icon={faFacebookF} style={{ width: '50px', height: '50px' }}/>
-                    </a>
-                    <a href="https://www.instagram.com/proyecto.webb/" target='_blank'>
-                      <FontAwesomeIcon icon={faInstagram} style={{ width: '50px', height: '50px' }}/>
-                    </a>
+                <div className='footerSection1'>
+
+                </div>
+                <div className='footerSection2'>
+
+                </div>
             </div>
+            <div className='divHr'>
+              <hr className='hr'/>
+            </div>
+            
             <div className='copi'>
-              <p><span>PROYECTO WEB</span> - 2023 Todos los derechos reservados ©</p>
+              <p className='textFooter'>Córdoba, Argentina. Todos los derechos reservados ©</p>
+              <img src={logo} className="logoFoter" alt="logo" />
+              <p className='textFooter'>+54 3544 - 614226</p>
+              <p className='textFooter'>+54 358-4834859</p>
             </div>
           </footer>
         </section>
