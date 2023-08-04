@@ -279,7 +279,7 @@ input{
   transition: background 0s;
  }
  .botonhero4 {
-  background-color: #1A1A1A;
+  background-color: #FF0A2C;
   font-family: inherit;
   display: inline-block;
   width: 16.2em;
@@ -308,7 +308,7 @@ input{
  
  .botonhero4:hover {
   color: #ffffff;
-  background-color: #292929;
+  background-color: #da0b26;
  }
  
  .botonhero4:before {
@@ -455,6 +455,9 @@ input{
 .imgProyectos {
   width: 90%;
 }
+.itemProyecto a:hover{
+  filter: brightness(.5)
+}
  /*review
  /* review */
 
@@ -497,14 +500,9 @@ input{
   color: var(--white);
 }
 
-.review .slide i{
-  font-size: 6rem;
-  color: var(--primary);
-}
-
 .review .slide p{
   padding-bottom: 1.5rem;
-  padding-top: 3rem;
+  padding-top: 2rem;
   font-size: 1.5rem;
   line-height: 1.8;
   color: var(--white);
@@ -515,7 +513,7 @@ input{
   gap: 1.5rem;
   align-items: center;
   justify-content: start;
-  padding: 1rem 0;
+  padding: .3rem 0;
   border-radius: .5rem;
 }
 #userInfo{
@@ -561,6 +559,7 @@ input{
   width: 100%;
   height: 15px;
   object-fit: contain;
+  margin-top: 15px;
 }
 .btnWpp{
   position: fixed;
@@ -593,6 +592,29 @@ footer{
   width: 100%;
   height: 70%;
 }
+.footerSection1{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  width: 50%;
+  color: white;
+  font-size: 32px;
+  padding-left: 5%;
+  padding-right: 2%;
+  line-height: 1.5;
+}
+.spanFooter{
+  color: #FF0A2C;
+  font-weight: bold;
+  font-size: 34px;
+}
+.text2Footer{
+  font-size: .8rem;
+}
+.footerSection2{
+  width: 50%;
+}
 .copi{
   display: flex;
   width: 100%;
@@ -620,6 +642,42 @@ footer{
   color: white !important;
   border-top: none !important; 
 }
+.footerLinks{
+  display: flex;
+  width: 100%;
+  height: 45%;
+  justify-content: center;
+  gap: 6%;
+  padding-top: 2%;
+  align-items: center;
+}
+.footerLinks a{
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.footerRedes{
+  display: flex;
+  height: 55%;
+  justify-content: center;
+  gap: 6%;
+  align-items: start;
+  padding: 10px;
+}
+.botonhero5 {
+  background-color: #0080FF;
+  width: 13.2em;
+  height: 2.6em;
+  font-size: 20px;
+  border-radius: 20px;
+  font-weight: 500;
+  color: white;
+ }
+ .botonhero5:hover {
+  background-color: #0063c7;
+ }
+
 
 @media (min-width: 320px) and (max-width: 1150px) {
   .review .review-slider{

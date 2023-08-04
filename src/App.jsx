@@ -153,7 +153,7 @@ function App() {
                 name="user_name"
                 value={formDetails.firstName}
                 onChange={(e) => onFormUpdate('firstName', e.target.value)}
-                style={{ backgroundColor: '#666', color:"white", borderRadius:"0", border:"none" }}
+                style={{ backgroundColor: '#666', color:"white", borderRadius:"5px", border:"none" }}
               />
             </div>
             <div className="mb-3">
@@ -169,7 +169,7 @@ function App() {
                 required
                 value={formDetails.phone}
                 onChange={(e) => onFormUpdate('phone', e.target.value)}
-                style={{ backgroundColor: '#666', color:"white", borderRadius:"0", border:"none" }}
+                style={{ backgroundColor: '#666', color:"white", borderRadius:"5px", border:"none" }}
               />
             </div>
             <div className="mb-3">
@@ -185,7 +185,7 @@ function App() {
                 required
                 value={formDetails.email}
                 onChange={(e) => onFormUpdate('email', e.target.value)}
-                style={{ backgroundColor: '#666', color:"white", borderRadius:"0", border:"none" }}
+                style={{ backgroundColor: '#666', color:"white", borderRadius:"5px", border:"none" }}
               />
             </div>
             <div className="mb-3">
@@ -199,7 +199,7 @@ function App() {
                 name="message"
                 value={formDetails.message}
                 onChange={(e) => onFormUpdate('message', e.target.value)}
-                style={{ backgroundColor: '#666', color:"white", borderRadius:"0", border:"none" }}
+                style={{ backgroundColor: '#666', color:"white", borderRadius:"5px", border:"none" }}
               ></textarea>
             </div>
             <div className="col-auto">
@@ -363,10 +363,26 @@ function App() {
           <footer>
             <div className='redes'>
                 <div className='footerSection1'>
-
+                  <p>Es hora de diseñar tu futuro 
+                    <span className='spanFooter'> ¿trabajamos juntos?</span></p>
+                  <p className='text2Footer'>Alineá tus ideas para llevar adelante ese proyecto que tanto soñas
+                    y construí un excelente producto digital para dar el salto.</p>  
                 </div>
                 <div className='footerSection2'>
-
+                    <div className='footerLinks'>
+                      <a href="#quienesSomos">Nosotros</a>
+                      <a href="#proyectos">Proyectos</a>
+                      <a href="#review">Comentarios</a>
+                      <a href="#app-header">Contacto</a>
+                    </div>
+                    <div className='footerRedes'>
+                      <a href="#" className='botonfoter'>
+                        <button className='botonhero5'>Contactarme<img className='vector' src={vector} alt="" /></button>
+                      </a>
+                      <a href="#" className='botonfoter'>
+                        <button className='botonhero5'>Contactarme<img className='vector' src={vector} alt="" /></  button>
+                      </a>
+                    </div>
                 </div>
             </div>
             <div className='divHr'>
