@@ -33,6 +33,8 @@ import mongo from "./Img/mongo-removebg-preview.png"
 import git from "./Img/git-removebg-preview.png"
 import email from "./Img/vectorEmail.png"
 import vectorComent from "./Img/comentariosVector.png"
+import vectoFB from "./Img/vectorFB.png"
+import vectoIG from "./Img/vectorIG.png"
 
 function App() {
   const formInitialDetails = {
@@ -376,11 +378,11 @@ function App() {
                       <a href="#app-header">Contacto</a>
                     </div>
                     <div className='footerRedes'>
-                      <a href="#" className='botonfoter'>
-                        <button className='botonhero5'>Contactarme<img className='vector' src={vector} alt="" /></button>
+                      <a href="https://www.facebook.com/proyectowebb" className='botonfoter' target='_blank'>
+                        <button className='botonhero5'>Facebook<img className='vector' src={vectoFB} alt="" /></button>
                       </a>
-                      <a href="#" className='botonfoter'>
-                        <button className='botonhero5'>Contactarme<img className='vector' src={vector} alt="" /></  button>
+                      <a href="https://www.instagram.com/proyecto.webb/" className='botonfoter' target='_blank'>
+                        <button className='botonhero5'>Instagram<img className='vector' src={vectoIG} alt="" /></  button>
                       </a>
                     </div>
                 </div>
