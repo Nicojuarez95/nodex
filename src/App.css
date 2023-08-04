@@ -374,10 +374,10 @@ input{
   width: 36%;
   display: flex;
   justify-content: center;
-  padding: 5%;
 }
 .info2 img{
-  object-fit: cover;
+  object-fit: contain;
+  width: 90%;
 }
 .herramientas{
   margin-top: -50px;
