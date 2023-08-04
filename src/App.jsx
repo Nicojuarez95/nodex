@@ -8,7 +8,7 @@ import Swal from "sweetalert2";
 import { useState } from "react";
 import persona1 from "../src/Img/persona1.png"
 import persona2 from "../src/Img/persona2.png"
-import nosotros from "../src/Img/FOTO CONJUNTO.png"
+import persona3 from "../src/Img/FOTO CONJUNTO.png"
 import hotel from "../src/Img/hotel.png"
 import soluciones from "./Img/solucionesElectricas.png"
 import fullfitness from "./Img/fullfitness.png"
@@ -276,7 +276,7 @@ function App() {
                         ¡Nosotros nos encargamos de potenciar tu presencia online!</p>
                     </div>
                     <div className="info2">
-                        <img src={nosotros} alt="" />
+                        <img src={persona3} alt="" />
                     </div>
                 </div>
           </div>
