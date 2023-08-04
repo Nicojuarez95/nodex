@@ -1,15 +1,11 @@
 import logo from '../src/Img/Logo PW Horizontal Blanco - Proyecto Web.png';
-import imgHero from "../src/Img/imgHero.png"
 import dominio from "../src/Img/image 5.png"
 import responsive from "../src/Img/image 4.png"
 import seo from "../src/Img/image 1.png"
 import diseño from "../src/Img/image 3.png"
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFacebookF } from '@fortawesome/free-brands-svg-icons';
-import { faInstagram } from '@fortawesome/free-brands-svg-icons';
 import emailjs from '@emailjs/browser';
 import Swal from "sweetalert2";
-import { useState, useRef } from "react";
+import { useState } from "react";
 import persona1 from "../src/Img/persona1.png"
 import persona2 from "../src/Img/persona2.png"
 import persona3 from "../src/Img/persona3.png"
