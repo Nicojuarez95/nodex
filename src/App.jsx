@@ -286,8 +286,8 @@ function App() {
                 </div>
           </div>
           <div className="herramientas">
-            <p className='bordeGris'></p>
-            <p className='herramientasusadas'>Herramientas usadas</p>
+            {/* <p className='bordeGris'></p> */}
+            <p className='herramientasusadas'>Tecnologías usadas</p>
             <div className="contHerramientas">
               <div className="herrameinta"><img className='imgHerr' src={figma} alt="" /><p className='nameHerr'>Figma</p></div>
               <div className="herrameinta"><img className='imgHerr' src={visual} alt="" /><p className='nameHerr'>Visual Studio Code</p></div>
@@ -317,7 +317,7 @@ function App() {
 
             <div className="swiper review-slider">
               <div className="swiper-wrapper">
-              <div className="swiper-slide slide">
+                  <div className="swiper-slide slide">
                     <div className="user">
                         <img src={persona1} alt=""/>
                         <div classname="user-info" id='userInfo'>
@@ -357,9 +357,11 @@ function App() {
               </div>
 
             </div>
+                <div className='contBoton'>
                   <a href="#" className='botonfinal'>
                         <button className='botonhero4'>Reunión gratuita<img className='vector' src={vector} alt="" /></button>
-                      </a>
+                </a>
+                </div>
                           
           </section>
 
