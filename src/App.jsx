@@ -321,8 +321,8 @@ function App() {
                     <div className="user">
                         <img src={persona1} alt=""/>
                         <div classname="user-info" id='userInfo'>
-                          <h3>nombre de cliente</h3>
-                          <p className='textoComentarios'>Diseño de adssda</p>
+                          <h3>Guille Maldonado</h3>
+                          <p className='textoComentarios'>Diseño de Fullfitness</p>
                         </div>
                     </div>
                     {/* <i className="fas fa-quote-right"></i> */}
@@ -333,8 +333,8 @@ function App() {
                     <div className="user">
                         <img src={persona2} alt=""/>
                         <div classname="user-info" id='userInfo'>
-                          <h3>nombre de cliente</h3>
-                          <p className='textoComentarios'>Diseño de adssda</p>
+                          <h3>Ciro Sanchez</h3>
+                          <p className='textoComentarios'>Diseño de Soluciones Eléctricas</p>
                         </div>
                     </div>
                     {/* <i className="fas fa-quote-right"></i> */}
@@ -345,7 +345,7 @@ function App() {
                     <div className="user">
                         <img src={persona3} alt=""/>
                         <div classname="user-info" id='userInfo'>
-                          <h3>nombre de cliente</h3>
+                          <h3></h3>
                           <p className='textoComentarios'>Diseño de adssda</p>
                         </div>
                     </div>
@@ -360,7 +360,7 @@ function App() {
                 <div className='contBoton'>
                   <a href="#" className='botonfinal'>
                         <button className='botonhero4'>Reunión gratuita<img className='vector' src={vector} alt="" /></button>
-                </a>
+                  </a>
                 </div>
                           
           </section>

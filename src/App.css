@@ -885,8 +885,56 @@ footer{
   .textoComentarios{
     font-size: .8rem !important;
   }
-  
-  
+  .footerLinks{
+    flex-direction: row;
+    justify-content: center;
+    gap: 5%;
+    flex-wrap: wrap;
+    height: 35%;
+    padding-top: 5%;
+  }
+  .footerLinks a{
+    font-size: .8rem;
+  }
+  .footerRedes{
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
+   .footerRedes a{
+    width: 100% !important;
+    display: flex;
+    justify-content: center;
+
+  }
+  .botonhero5{
+    width: 80%;
+    height: 40px;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8%;
+  }
+  .footerSection1{
+    padding: 5px;
+    font-size: 1rem;
+  }
+  .spanFooter{
+    color: #FF0A2C;
+    font-weight: bold;
+    font-size: 1rem;
+  }
+  .text2Footer{
+    font-size: .6rem;
+  }
+  .textFooter{
+    font-size: .35rem;
+  }
+  .logoFoter{
+    width: 150px;
+  }
+
 }
 @media (min-height: 320px) and (max-height: 750px) {
   .section1{
