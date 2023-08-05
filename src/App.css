@@ -9,8 +9,8 @@ main{
   background-color: rgb(245, 245, 245)
 }
 body{
-  background-color: rgb(245, 245, 245)
-
+  background-color: rgb(245, 245, 245);
+  padding-top: 4%;
 }
 *{
   font-family: 'Poppins', sans-serif;
@@ -24,6 +24,10 @@ body{
   background-color: rgb(10, 10, 10) !important;
   height: 10vh;
   display: flex;
+  top: 0;
+  position: fixed;
+  z-index: 1000000;
+  width: 100%;
   padding-left: 2VW;
 }
 #app-header img{
@@ -905,7 +909,6 @@ footer{
     width: 100% !important;
     display: flex;
     justify-content: center;
-
   }
   .botonhero5{
     width: 80%;

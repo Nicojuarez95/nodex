@@ -101,7 +101,7 @@ function App() {
  
   return (
     <div className="App">
-      <a className='btnWpp' href="https://api.whatsapp.com/send?phone=5493584405266&text=Hola! Me contacto por: " target='_blank'> <img src={wppbtn} alt="" /></a>
+      <a className='btnWpp' href="https://api.whatsapp.com/send?phone=5493584834859&text=Hola! Me contacto por: " target='_blank'> <img src={wppbtn} alt="" /></a>
       <nav className="navbar navbar-expand-lg" id='app-header'>
         <div className="container-fluid">
           <img src={logo} className="App-logo" alt="logo" />
@@ -290,7 +290,7 @@ function App() {
             <p className='herramientasusadas'>Tecnologías usadas</p>
             <div className="contHerramientas">
               <div className="herrameinta"><img className='imgHerr' src={figma} alt="" /><p className='nameHerr'>Figma</p></div>
-              <div className="herrameinta"><img className='imgHerr' src={visual} alt="" /><p className='nameHerr'>Visual Studio Code</p></div>
+              <div className="herrameinta"><img className='imgHerr' src={visual} alt="" /><p className='nameHerr'>VS Code</p></div>
               <div className="herrameinta"><img className='imgHerr' src={html} alt="" /><p className='nameHerr'>HTML5</p></div>
               <div className="herrameinta"><img className='imgHerr' src={css} alt="" /><p className='nameHerr'>CSS3</p></div>
               <div className="herrameinta"><img className='imgHerr' src={javascript} alt="" /><p className='nameHerr'>JavaScript</p></div>
