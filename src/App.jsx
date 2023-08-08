@@ -350,7 +350,7 @@ function App() {
                         </div>
                     </div>
                     {/* <i className="fas fa-quote-right"></i> */}
-                    <p className='textoComent'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda eligendi sint dolorum, magni esse suscipit quia ab quos neque repudiandae omnis quo aliquam dolore temporibus libero vel voluptas velit porro! <br /><img className='vector-coment' src={vectorComent} alt=""/></p>
+                    <p className='textoComent'>Cada detalle, desde la paleta de colores hasta la disposición de los productos, refleja la habilidad para capturar mi visión. Estoy verdaderamente agradecida por el resultado final y ansiosa por generar muchas ventas. <br /><img className='vector-coment' src={vectorComent} alt=""/></p>
                     
                   </div>
 
