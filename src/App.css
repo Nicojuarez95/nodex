@@ -1046,7 +1046,7 @@ footer{
 @media (min-height: 320px) and (max-height: 750px) {
   .section1{
     padding-top: 0;
-    height: 120vh;
+    height: 100vh;
   }
   .section2-1{
     height: 35vh;
@@ -1057,8 +1057,11 @@ footer{
   #app-header{
     height: 13vh;
   }
+  .email{
+    margin-top: 1%;
+  }
   form{
-    margin-top: -20%;
+    margin-top: -10%;
   }
   form h2{
     font-size: 1rem;
@@ -1076,7 +1079,7 @@ footer{
     width: 20px;
   }
   .filtro{
-    height: 120%;
+    height: 100%;
   }
   .contVentajasText{
     text-align: start;
@@ -1096,7 +1099,7 @@ footer{
     font-size: .9rem;
   }
   .imgHerr{
-    width: 35px;
+    width: 50px;
   }
   .botonfinal{
     width: 100%;
@@ -1110,7 +1113,7 @@ footer{
     padding-right: 10%;
   }
   .review .review-slider{
-    width: 85;
+    width: 85%;
   }
   .footerSection1{
     justify-content: space-between;
