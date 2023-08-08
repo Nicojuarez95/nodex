@@ -345,8 +345,8 @@ function App() {
                     <div className="user">
                         <img src={persona3} alt=""/>
                         <div classname="user-info" id='userInfo'>
-                          <h3></h3>
-                          <p className='textoComentarios'>Diseño de adssda</p>
+                          <h3>Carolina Abramian</h3>
+                          <p className='textoComentarios'>Diseño de Mateina </p>
                         </div>
                     </div>
                     {/* <i className="fas fa-quote-right"></i> */}
