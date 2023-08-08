@@ -545,7 +545,7 @@ input{
   gap: 1.5rem;
   align-items: center;
   justify-content: start;
-  padding: .3rem 0;
+  padding:0;
   border-radius: .5rem;
 }
 #userInfo{
@@ -558,6 +558,7 @@ input{
   object-fit: cover;
   background-color: #afafaf;
   border-radius: 50%;
+  padding: 0 !important;
 }
 
 .review .slide .user h3{
