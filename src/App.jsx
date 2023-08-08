@@ -209,7 +209,7 @@ function App() {
               <button type="submit" id="btn-pixel" className="btn btn-primary mb-3">
                 {buttonText} <img className='vector' src={vector} alt="" />
               </button>
-              <button type="button" id="btn-pixel" className="btn btn-primary mb-3" onClick={handleCancel}>
+              <button type="button" id="btn-pixel2" className="btn btn-primary mb-3" onClick={handleCancel}>
                 Cancelar <img className='vector' src={vector} alt="" />
               </button>
             </div>
