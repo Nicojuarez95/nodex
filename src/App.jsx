@@ -126,7 +126,7 @@ function App() {
 
       <main>
         <section className='section1'>
-          <div className='filtro'></div>
+          
           <div className='section1-1'>
             <h3 className='bienvenida'>Bienvenidos a Proyecto Web</h3>
             {/* <img className='imgHero' src={imgHero} alt="" /> */}
@@ -346,7 +346,7 @@ function App() {
                         <img src={persona3} alt=""/>
                         <div classname="user-info" id='userInfo'>
                           <h3>Carolina Abramian</h3>
-                          <p className='textoComentarios'>Diseño de Mateina </p>
+                          <p className='textoComentarios'>Diseño de Mateína </p>
                         </div>
                     </div>
                     {/* <i className="fas fa-quote-right"></i> */}
