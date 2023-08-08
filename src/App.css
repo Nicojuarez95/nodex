@@ -766,6 +766,10 @@ footer{
     width: 12px;
     margin: 0;
   }
+  .vector2{
+    width: 20px;
+    margin-left: 10px;
+  }
   .section1-2{
     width: 100%;
   }

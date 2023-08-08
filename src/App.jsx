@@ -262,7 +262,7 @@ function App() {
           </div>
           <div>
             <a href="#" className='boton'>
-                    <button className='botonhero2'>Contactarme<img className='vector' src={vector} alt="" /></button>
+                    <button className='botonhero2'>Contactarme<img className='vector2' src={vector} alt="" /></button>
                   </a>
           </div>
           <section className='section3'>
@@ -359,7 +359,7 @@ function App() {
             </div>
                 <div className='contBoton'>
                   <a href="#" className='botonfinal'>
-                        <button className='botonhero4'>Reunión gratuita<img className='vector' src={vector} alt="" /></button>
+                        <button className='botonhero4'>Reunión gratuita<img className='vector2' src={vector} alt="" /></button>
                   </a>
                 </div>
                           
