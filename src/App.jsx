@@ -152,7 +152,7 @@ function App() {
                 className="form-control"
                 id="firstName"
                 required
-                placeholder="Ej:José Lopez"
+                placeholder="Ej:José Lopez" 
                 name="user_name"
                 value={formDetails.firstName}
                 onChange={(e) => onFormUpdate('firstName', e.target.value)}

@@ -5,6 +5,17 @@
   --white:#030303;
   --box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.1);
 }
+::-webkit-scrollbar {
+    width: 10px; /* Ancho del scrollbar */
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: #FB0928; /* Color del thumb */
+    border-radius: 5px; /* Borde redondeado del thumb */
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: #252525; /* Color del track */
+  }
 main{
   background-color: rgb(245, 245, 245)
 }
@@ -293,7 +304,7 @@ input{
   width: 16.2em;
   height: 4.6em;
   line-height: 2.5em;
-  margin-top: 17%;
+  margin-top: 50%;
   position: relative;
   overflow: hidden;
   border: 2px solid var(--color);
@@ -534,7 +545,6 @@ input{
   object-fit: cover;
   background-color: #afafaf;
   border-radius: 50%;
-  padding: 5px;
 }
 
 .review .slide .user h3{
@@ -687,7 +697,9 @@ footer{
  .botonhero5:hover {
   background-color: #0063c7;
  }
-
+ .botonfinal{
+  margin-left: -150%;
+}
 
 @media (min-width: 320px) and (max-width: 1150px) {
   .review .review-slider{
@@ -716,7 +728,7 @@ footer{
 
 }
 
-@media (min-width: 320px) and (max-width: 750px) {
+@media (min-width: 320px) and (max-width: 850px) {
   #app-header img{
     width: 245px;
     object-fit: contain;
@@ -904,6 +916,7 @@ footer{
     display: flex;
     flex-direction: column;
     padding: 0;
+    width: 100%;
   }
    .footerRedes a{
     width: 100% !important;
@@ -937,7 +950,14 @@ footer{
   .logoFoter{
     width: 150px;
   }
-
+  .botonhero4 {
+   margin-top: 5%;
+   }
+}
+@media (min-width: 850px) and (max-width: 1750px) {
+  .botonhero4 {
+    margin-right: -280%;
+  }
 }
 @media (min-height: 320px) and (max-height: 750px) {
   .section1{
