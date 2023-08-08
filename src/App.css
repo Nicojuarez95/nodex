@@ -576,9 +576,10 @@ input{
 }
 
 .navbar-collapse.show {
-  background-color: #00000086;
+  background-color: #000000;
   padding: 8px;
-  border-radius: 15px;
+  border-radius: 5px;
+  z-index: 10 !important;
 }
 .swiper-pagination{
   display: flex;
@@ -754,6 +755,11 @@ footer{
   }
   #btn-pixel{
     font-size: .6rem;
+    width: 57%;
+  }
+  #btn-pixel2{
+    font-size: .6rem;
+    width: 45%;
   }
   .vector{
     width: 12px;
@@ -827,13 +833,20 @@ footer{
   }
   .info{
     width: 100%;
-    padding-top: 50px;
+    padding-top: 7%;
   }
   .info2{
     width: 100%;
   }
   .info2 img{
     width: 90%;
+  }
+  .textNosotros{
+    margin: 0;
+  }
+  .herramientasusadas{
+    margin-bottom: 1%;
+    margin-top: 3%;
   }
   .contHerramientas{
     padding-left: 10px;
@@ -864,8 +877,8 @@ footer{
     gap: 10px;
   }
   .proyectosTitulo{
-    margin-bottom: 5%;
-    margin-top: -1%;
+    margin-bottom: 2%;
+    margin-top: 2%;
   }
   .itemProyecto{
     width: 330px;
@@ -964,7 +977,7 @@ footer{
     font-size: .35rem;
   }
   .logoFoter{
-    width: 150px;
+    width: 120px;
   }
   .botonhero4 {
    margin-top: 5%;
