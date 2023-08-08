@@ -6,16 +6,22 @@
   --box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.1);
 }
 ::-webkit-scrollbar {
-    width: 10px; /* Ancho del scrollbar */
-  }
-  ::-webkit-scrollbar-thumb {
-    background-color: #FB0928; /* Color del thumb */
-    border-radius: 5px; /* Borde redondeado del thumb */
-  }
+  width: 10px; /* Ancho del scrollbar */
+}
+::-webkit-scrollbar-thumb {
+  background-color: #FB0928; /* Color del thumb */
+  border-radius: 5px; /* Borde redondeado del thumb */
+}
   
-  ::-webkit-scrollbar-track {
-    background-color: #252525; /* Color del track */
-  }
+::-webkit-scrollbar-track {
+  background-color: #252525; /* Color del track */
+}
+.navbar-toggler{
+  background-color: rgb(255, 255, 255);
+}
+.navbar-toggler-icon {
+  transition: background-color 1s ease;
+}
 main{
   background-color: rgb(245, 245, 245)
 }
@@ -1105,6 +1111,11 @@ footer{
   }
   .review .review-slider{
     width: 85;
+  }
+  .footerSection1{
+    justify-content: space-between;
+    padding-top: 3%;
+    padding-bottom: 6%;
   }
   .footerSection1 p{
     margin: 0;
