@@ -338,7 +338,7 @@ function App() {
                         </div>
                     </div>
                     {/* <i className="fas fa-quote-right"></i> */}
-                    <p className='textoComent'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda eligendi sint dolorum, magni esse suscipit quia ab quos neque repudiandae omnis quo aliquam dolore temporibus libero vel voluptas velit porro! <br /><img className='vector-coment' src={vectorComent} alt=""/></p>
+                    <p className='textoComent'>Estoy muy contento como quedó armada la página, es comoda y a los clientes se les facilita ver mi trabajo y contacto. Recomiendo mucho el trabajo de Proyecto Web para sus negocios. <br /><img className='vector-coment' src={vectorComent} alt=""/></p>
                   </div>
 
                   <div className="swiper-slide slide">
