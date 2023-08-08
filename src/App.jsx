@@ -130,9 +130,9 @@ function App() {
           <div className='section1-1'>
             <h3 className='bienvenida'>Bienvenidos a Proyecto Web</h3>
             {/* <img className='imgHero' src={imgHero} alt="" /> */}
-            <p className='textHero1'>Diseña y desarrolla tu página web,
-              somos expertos creativos!</p>
-            <p className='textHero'>Nos dedicamos al mundo tecnológico, trabajamos en desarrollo, diseño web, y gráfica publicitaria.</p>
+            <p className='textHero1'>Diseñá y desarrollá tu página web
+              ¡somos expertos creativos!</p>
+            <p className='textHero'>Nos dedicamos al mundo tecnológico, trabajamos en desarrollo, diseño web y gráfica publicitaria.</p>
             <a href="#" className='boton1'>
                     <button className='botonhero3'>Reunión gratuita 
                     <img className='vector' src={vector} alt="" /></button>
@@ -272,12 +272,12 @@ function App() {
                     <div className="info">
                       <p className='sobreNosotrosTitulo'>Sobre Nosotros</p>
                       <p className='sobreNosotrosTitulo2'>¡Tu experiencia digital comienza ahora!</p>
-                      <p className='textNosotros'>¡Somos un equipo apasionado por el diseño UX/UI y desarrolladoro de código, vamos a hacer que cada click sea una experiencia alucinante! Nos dedicamos a crear sitios webs, landing pages, e-commerce y mucho más, y lo hacemos con una obsesión por los detalles y un entusiasmo contagioso en cada paso del proceso. <br /><br />
+                      <p className='textNosotros'>¡Somos un equipo apasionado por el diseño UX/UI y desarrollo de código, hacemos que cada click sea una experiencia alucinante! Nos dedicamos a crear sitios webs, landing pages, e-commerce y mucho más, y lo hacemos con una obsesión por los detalles y un entusiasmo contagioso en cada paso del proceso. <br /><br />
 
-                        Somos Nicolas Juarez y Bruno Rossetti, dos apasionados de la magia digital.
+                        Somos Nicolás Juárez y Bruno Rossetti, dos apasionados de la magia digital.
                         Mientras Nico proviene del mundo de la informática como desarrollador web full stack, Bruno viene de una fusión entre la arquitectura y el diseño gráfico. <br /><br />
 
-                        ¿Quieres impulsar tu negocio hacia el éxito?
+                        ¿Querés impulsar tu negocio hacia el éxito?
                         ¡Nosotros nos encargamos de potenciar tu presencia online!</p>
                     </div>
                     <div className="info2">
