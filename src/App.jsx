@@ -95,9 +95,6 @@ function App() {
       swiper.destroy();
     };
   }, []);
-
-
-
  
   return (
     <div className="App">
