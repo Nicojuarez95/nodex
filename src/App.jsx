@@ -138,78 +138,78 @@ function App() {
           </div>
 
           <div className='section1-2'>
-          <form onSubmit={handleSubmit}>
-            <h2>¿Tenés dudas? Envianos un mensaje:</h2>
-            <div className="mb-3">
-              <label htmlFor="firstName" className="form-label">
-                Nombre
-              </label>
-              <input
-                type="text"
-                className="form-control"
-                id="firstName"
-                required
-                placeholder="Ej:José Lopez" 
-                name="user_name"
-                value={formDetails.firstName}
-                onChange={(e) => onFormUpdate('firstName', e.target.value)}
-                style={{ backgroundColor: '#666', color:"white", borderRadius:"5px", border:"none" }}
-              />
-            </div>
-            <div className="mb-3">
-              <label htmlFor="phone" className="form-label">
-                Celular
-              </label>
-              <input
-                type="text"
-                className="form-control"
-                id="phone"
-                placeholder="Ej:+54 3584834859"
-                name="user_phone"
-                required
-                value={formDetails.phone}
-                onChange={(e) => onFormUpdate('phone', e.target.value)}
-                style={{ backgroundColor: '#666', color:"white", borderRadius:"5px", border:"none" }}
-              />
-            </div>
-            <div className="mb-3">
-              <label htmlFor="email" className="form-label">
-                Email
-              </label>
-              <input
-                type="email"
-                className="form-control"
-                id="email"
-                placeholder="Ej:nombre@ejemplo.com"
-                name="user_email"
-                required
-                value={formDetails.email}
-                onChange={(e) => onFormUpdate('email', e.target.value)}
-                style={{ backgroundColor: '#666', color:"white", borderRadius:"5px", border:"none" }}
-              />
-            </div>
-            <div className="mb-3">
-              <label htmlFor="message" className="form-label">
-                Mensaje
-              </label>
-              <textarea
-                className="form-control"
-                id="message"
-                rows="3"
-                name="message"
-                value={formDetails.message}
-                onChange={(e) => onFormUpdate('message', e.target.value)}
-                style={{ backgroundColor: '#666', color:"white", borderRadius:"5px", border:"none" }}
-              ></textarea>
-            </div>
-            <div className="col-auto">
-              <button type="submit" id="btn-pixel" className="btn btn-primary mb-3">
-                {buttonText} <img className='vector' src={vector} alt="" />
-              </button>
-              <button type="button" id="btn-pixel2" className="btn btn-primary mb-3" onClick={handleCancel}>
-                Cancelar <img className='vector' src={vector} alt="" />
-              </button>
-            </div>
+            <form onSubmit={handleSubmit}>
+              <h2>¿Tenés dudas? Envianos un mensaje:</h2>
+              <div className="mb-3">
+                <label htmlFor="firstName" className="form-label">
+                  Nombre
+                </label>
+                <input
+                  type="text"
+                  className="form-control"
+                  id="firstName"
+                  required
+                  placeholder="Ej:José Lopez" 
+                  name="user_name"
+                  value={formDetails.firstName}
+                  onChange={(e) => onFormUpdate('firstName', e.target.value)}
+                  style={{ backgroundColor: '#666', color:"white", borderRadius:"5px", border:"none" }}
+                />
+              </div>
+              <div className="mb-3">
+                <label htmlFor="phone" className="form-label">
+                  Celular
+                </label>
+                <input
+                  type="text"
+                  className="form-control"
+                  id="phone"
+                  placeholder="Ej:+54 3584834859"
+                  name="user_phone"
+                  required
+                  value={formDetails.phone}
+                  onChange={(e) => onFormUpdate('phone', e.target.value)}
+                  style={{ backgroundColor: '#666', color:"white", borderRadius:"5px", border:"none" }}
+                />
+              </div>
+              <div className="mb-3">
+                <label htmlFor="email" className="form-label">
+                  Email
+                </label>
+                <input
+                  type="email"
+                  className="form-control"
+                  id="email"
+                  placeholder="Ej:nombre@ejemplo.com"
+                  name="user_email"
+                  required
+                  value={formDetails.email}
+                  onChange={(e) => onFormUpdate('email', e.target.value)}
+                  style={{ backgroundColor: '#666', color:"white", borderRadius:"5px", border:"none" }}
+                />
+              </div>
+              <div className="mb-3">
+                <label htmlFor="message" className="form-label">
+                  Mensaje
+                </label>
+                <textarea
+                  className="form-control"
+                  id="message"
+                  rows="3"
+                  name="message"
+                  value={formDetails.message}
+                  onChange={(e) => onFormUpdate('message', e.target.value)}
+                  style={{ backgroundColor: '#666', color:"white", borderRadius:"5px", border:"none" }}
+                ></textarea>
+              </div>
+              <div className="col-auto">
+                <button type="submit" id="btn-pixel" className="btn btn-primary mb-3">
+                  {buttonText} <img className='vector' src={vector} alt="" />
+                </button>
+                <button type="button" id="btn-pixel2" className="btn btn-primary mb-3" onClick={handleCancel}>
+                  Cancelar <img className='vector' src={vector} alt="" />
+                </button>
+              </div>
             {
                         status.message &&
                         <div>
