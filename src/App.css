@@ -754,7 +754,14 @@ footer{
   margin-left: 10%;
 }
 }
-
+@media (min-width: 320px) and (max-width: 440px) and (min-height: 600px) and (max-height: 840px) {
+  .App-logo {
+    width: 80% !important;
+  }
+  .section1{
+    height: 140vh !important;
+  }
+}
 @media (min-width: 320px) and (max-width: 850px) {
   #app-header img{
     width: 245px;

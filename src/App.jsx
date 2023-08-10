@@ -263,6 +263,7 @@ function App() {
                   </a>
           </div>
           <section className='section3'>
+            
           <div className='quienesSomos' id='quienesSomos'>
 
                 <div className='infoImgQuienesSomos'>
