@@ -108,10 +108,10 @@ function App() {
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav ms-auto">
               <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="#quienesSomos">Quienes Somos</a>
+                <a className="nav-link active" aria-current="page" href="#nosotrosLink">Quienes Somos</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#proyectos">Proyectos</a>
+                <a className="nav-link" href="#proyectosLink">Proyectos</a>
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="#review">Clientes</a>
@@ -250,7 +250,7 @@ function App() {
             </div>
             <div className='ventajas'>
               <img src={responsive} alt="" />
-              <div className='contVentajasText'>
+              <div id='nosotrosLink' className='contVentajasText'>
                 <p className='tituloVentaja'>Diseño Responsive</p>
                 <p className='textVent'>Adaptado a todos los
                   dispositivos</p>
@@ -258,7 +258,7 @@ function App() {
             </div>
           </div>
           <div>
-            <a href="#" className='boton'>
+            <a href="#" className='boton'> 
                     <button className='botonhero2'>Contactarme<img className='vector2' src={vector} alt="" /></button>
                   </a>
           </div>
@@ -296,7 +296,7 @@ function App() {
               <div className="herrameinta"><img className='imgHerr' src={git} alt="" /><p className='nameHerr'>GIT</p></div>
               <div className="herrameinta"><img className='imgHerr' src={express} alt="" /><p className='nameHerr'>Express JS</p></div>
               <div className="herrameinta"><img className='imgHerr' src={node} alt="" /><p className='nameHerr'>Node JS</p></div>
-              <div className="herrameinta"><img className='imgHerr' src={mongo} alt="" /><p className='nameHerr'>Mongo DB</p></div>
+              <div id='proyectosLink' className="herrameinta"><img className='imgHerr' src={mongo} alt="" /><p className='nameHerr'>Mongo DB</p></div>
             </div>
           </div>
           <div className='proyectos' id='proyectos'>
@@ -373,10 +373,10 @@ function App() {
                 </div>
                 <div className='footerSection2'>
                     <div className='footerLinks'>
-                      <a href="#quienesSomos">Nosotros</a>
-                      <a href="#proyectos">Proyectos</a>
+                      <a href="#nosotrosLink">Nosotros</a>
+                      <a href="#proyectosLink">Proyectos</a>
                       <a href="#review">Comentarios</a>
-                      <a href="#app-header">Contacto</a>
+                      <a href="#">Contacto</a>
                     </div>
                     <div className='footerRedes'>
                       <a href="https://www.facebook.com/proyectowebb" className='botonfoter' target='_blank'>
