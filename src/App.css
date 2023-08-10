@@ -92,9 +92,13 @@ form h2{
   font-size: 20px;
   padding: 8px;
 }
-.email{
+.email {
   color: white;
   margin-top: 10vh;
+  text-decoration: none;
+}
+.email:hover {
+  color: #FB0928;
 }
 .imgEmail{
   margin-right: 15px;

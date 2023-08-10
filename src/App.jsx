@@ -134,7 +134,7 @@ function App() {
                     <button className='botonhero3'>Reunión gratuita 
                     <img className='vector' src={vector} alt="" /></button>
                   </a>
-            <p className='email'><img className='imgEmail' src={email} alt="" />proyectowebdevelopment@gmail.com</p>
+            <p className='email'><img className='imgEmail' src={email} alt="" /><a className='email' href="mailto:proyectowebdevelopment@gmail.com">proyectowebdevelopment@gmail.com</a></p>
           </div>
 
           <div className='section1-2'>
