@@ -504,9 +504,8 @@ input{
 .itemProyecto a:hover{
   filter: brightness(.5)
 }
- /*review
- /* review */
 
+ /* review */
 .review{
   background-image: url(../src/Img/Portada\ Facebook\ copia\ -\ Sierras\ de\ Calamuchita\ 1.png);
   background-size: cover;
