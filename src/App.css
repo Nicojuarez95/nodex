@@ -14,7 +14,7 @@
 }
   
 ::-webkit-scrollbar-track {
-  background-color: #252525; /* Color del track */
+  background-color: #252525;
 }
 .navbar-toggler{
   background-color: rgb(255, 255, 255);
