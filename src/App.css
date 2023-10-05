@@ -582,7 +582,6 @@ input{
   color: var(--black);
   padding-bottom: .5rem;
 }
-
 .review .slide .user i{
   font-size: 1.3rem;
   color: var(--primary);
