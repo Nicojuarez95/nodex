@@ -1081,6 +1081,7 @@ footer{
     width: 120%;
   }
 }
+
 @media (min-height: 320px) and (max-height: 750px) {
   .section1{
     padding-top: 0;
