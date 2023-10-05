@@ -10,7 +10,7 @@
 }
 ::-webkit-scrollbar-thumb {
   background-color: #FB0928;
-  border-radius: 5px; /* Borde redondeado del thumb */
+  border-radius: 5px; 
 }
   
 ::-webkit-scrollbar-track {
