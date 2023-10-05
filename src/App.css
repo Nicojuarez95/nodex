@@ -748,6 +748,7 @@ footer{
     width: 300px !important;
   }
 }
+
 @media (min-width: 1151px) and (max-width: 1950px) {
   .review .review-slider{
     margin-right: 27% !important;
