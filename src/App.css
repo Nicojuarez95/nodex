@@ -611,6 +611,7 @@ input{
   object-fit: contain;
   margin-top: 15px;
 }
+
 .btnWpp{
   position: fixed;
   z-index: 999;
