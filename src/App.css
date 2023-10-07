@@ -575,6 +575,7 @@ input{
   border-radius: 50%;
   padding: 0 !important;
 }
+
 .review .slide .user h3{
   font-size: 2rem;
   color: var(--black);
