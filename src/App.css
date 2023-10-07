@@ -586,6 +586,7 @@ input{
   font-size: 1.3rem;
   color: var(--primary);
 }
+
 .navbar-toggler[aria-expanded="true"] {
   background-color: #f3f3f3;
   border-color: #2d1eff; 
