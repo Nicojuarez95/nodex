@@ -693,6 +693,7 @@ footer{
 .logoFoter{
   object-fit: contain;
 }
+
 .divHr{
   display: flex;
   justify-content: center;
