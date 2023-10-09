@@ -689,6 +689,7 @@ footer{
   display: flex;
   align-items: center;
 }
+
 .logoFoter{
   object-fit: contain;
 }
