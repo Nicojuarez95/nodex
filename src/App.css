@@ -430,6 +430,7 @@ input{
   margin-top: -50px;
   height: 20%;
   display: flex;
+  gap: 8%;
   flex-direction: column;
 }
 .bordeGris{
@@ -808,7 +809,7 @@ footer{
     height: 100vh !important;
   }
   .review{
-    margin-top: 130vh !important;
+    margin-top: 110vh !important;
     height: 80vh !important;
   }
   footer{
@@ -968,7 +969,7 @@ footer{
     height: 60%;
   }
   .herramientas{
-    margin-top: 45%;
+    margin-top: 17%;
   }
   .herrameinta{
     height: 25px;
@@ -1198,7 +1199,7 @@ footer{
     margin-bottom: 7%;
   }
   .info2 img{
-    width: 120%;
+    width: 100%;
     margin-right: 12%;
   }
   .sobreNosotrosTitulo2{
