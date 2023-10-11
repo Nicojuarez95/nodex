@@ -751,7 +751,7 @@ footer{
  .botonhero5:hover {
   background-color: #0063c7;
  }
- 
+
  .botonfinal{
   margin-left: -150%;
 }
@@ -917,7 +917,6 @@ footer{
     font-size: 1rem;
     text-align: center;
   }
-
   .section2-2{
     display: flex;
     flex-direction: row;
