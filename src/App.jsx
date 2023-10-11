@@ -257,13 +257,13 @@ function App() {
               </div>
             </div>
           </div>
+          
+          <section className='section3'>
           <div>
             <a href="#" className='boton'> 
                     <button className='botonhero2'>Contactarme<img className='vector2' src={vector} alt="" /></button>
                   </a>
           </div>
-          <section className='section3'>
-            
           <div className='quienesSomos' id='quienesSomos'>
 
                 <div className='infoImgQuienesSomos'>

@@ -283,7 +283,7 @@ input{
   width: 13.2em;
   height: 3.6em;
   line-height: 2.5em;
-  margin-top: 90px;
+  margin-top: 80px;
   position: relative;
   overflow: hidden;
   border: 2px solid var(--color);
@@ -416,6 +416,7 @@ input{
   width: 80%;
   text-align: start;
   font-weight: 550;
+  font-size: .9rem;
 }
 .info2{
   width: 36%;
@@ -772,6 +773,21 @@ footer{
   }
   .imgTecnos{
     width: 300px !important;
+  }
+  
+}
+@media (min-width: 320px) and (max-width: 768px) {
+  .herramientasusadas{
+    margin: 0;
+    text-align: center;
+    font-weight: 800;
+    font-size: 1.5rem;
+  }
+}
+@media (min-width: 769px) and (max-width: 1149px) {
+  .herramientasusadas{
+    margin: 0;
+    margin-left: 60px;
   }
 }
 
