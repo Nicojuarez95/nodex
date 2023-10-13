@@ -22,6 +22,7 @@
 .navbar-toggler{
   background-color: rgb(255, 255, 255);
 }
+
 .navbar-toggler-icon {
   transition: background-color 1s ease;
 }
