@@ -883,7 +883,7 @@ footer{
     padding: 0 !important;
   }
   .container-fluid{
-    margin-top: -145px;
+    margin-top: -155px;
   }
   .section1{
     display: flex;
@@ -1253,7 +1253,6 @@ footer{
   }
   .info2 img{
     width: 90%;
-    margin-right: 12%;
   }
   .sobreNosotrosTitulo2{
     font-size: 1.9rem;
