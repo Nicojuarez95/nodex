@@ -865,11 +865,25 @@ footer{
     padding-right: 3%;
   }
 }
+
+@media (min-width: 851px) and (max-width: 901px) {
+  .container-fluid{
+    margin-top: -190px;
+  }
+}
+@media (min-width: 902px) and (max-width: 991px) {
+  .container-fluid{
+    margin-top: -190px;
+  }
+}
 @media (min-width: 320px) and (max-width: 850px) {
   #app-header img{
-    width: 245px;
+    width: 235px;
     object-fit: contain;
     padding: 0 !important;
+  }
+  .container-fluid{
+    margin-top: -145px;
   }
   .section1{
     display: flex;
