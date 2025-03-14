@@ -1,4 +1,4 @@
-import logo from '../src/Img/Logo PW Horizontal Blanco - Proyecto Web.png';
+import logo from '../src/Img/NODEX1-removebg-preview.png';
 import imgHero from "../src/Img/imgHero.png"
 import dominio from "../src/Img/image 5.png"
 import responsive from "../src/Img/image 4.png"
@@ -13,7 +13,7 @@ import { useState, useRef } from "react";
 import persona1 from "../src/Img/persona1.png"
 import persona2 from "../src/Img/persona2.png"
 import persona3 from "../src/Img/persona3.png"
-import fotoGrupal from "../src/Img/FOTO CONJUNTO.png"
+import fotoGrupal from "../src/Img/nodexlogo-removebg-preview.png"
 import hotel from "../src/Img/hotel.png"
 import soluciones from "./Img/solucionesElectricas.png"
 import fullfitness from "./Img/fullfitness.png"
@@ -60,10 +60,10 @@ function App() {
     e.preventDefault();
 
     emailjs
-      .sendForm('service_rtegbgd', 'template_sdggipt', e.target, '4hOqTm7TRau9xcy40')
+      .sendForm('service_o6xiaux', 'template_iix1uf7', e.target, 'FH72l0ChKDQ3CL4OZ')
       .then(
         (result) => {
-          Swal.fire('Mensaje enviado!', 'ProyectoWeb pronto se pondra en contacto!', 'success');
+          Swal.fire('Mensaje enviado!', 'NODEX pronto se pondra en contacto!', 'success');
         },
         (error) => {
           Swal.fire('Algo salio mal!', 'Intenta de nuevo mas tarde', 'error');
@@ -125,7 +125,7 @@ function App() {
         <section className='section1'>
           
           <div className='section1-1'>
-            <h3 className='bienvenida'>Bienvenidos a Proyecto Web</h3>
+            <h3 className='bienvenida'>Bienvenidos a Nodex</h3>
             {/* <img className='imgHero' src={imgHero} alt="" /> */}
             <p className='textHero1'>Diseñá y desarrollá tu página web
               ¡somos expertos creativos!</p>
@@ -134,7 +134,7 @@ function App() {
                     <button className='botonhero3'>Reunión gratuita 
                     <img className='vector' src={vector} alt="" /></button>
                   </a>
-            <p className='email'><img className='imgEmail' src={email} alt="" /><a className='email' href="mailto:proyectowebdevelopment@gmail.com">proyectowebdevelopment@gmail.com</a></p>
+            <p className='email'><img className='imgEmail' src={email} alt="" /><a className='email' href="mailto:proyectowebdevelopment@gmail.com">contacto.nodex@gmail.com</a></p>
           </div>
 
           <div className='section1-2'>
@@ -270,13 +270,11 @@ function App() {
                     <div className="info">
                       <p className='sobreNosotrosTitulo'>Sobre Nosotros</p>
                       <p className='sobreNosotrosTitulo2'>¡Tu experiencia digital comienza ahora!</p>
-                      <p className='textNosotros'>¡Somos un equipo apasionado por el diseño UX/UI y desarrollo de código, hacemos que cada click sea una experiencia alucinante! Nos dedicamos a crear sitios webs, landing pages, e-commerce y mucho más, y lo hacemos con una obsesión por los detalles y un entusiasmo contagioso en cada paso del proceso. <br /><br />
+                      <p className='textNosotros'>¡Creamos experiencias digitales que marcan la diferencia! Somos un equipo apasionado por el diseño UX/UI y el desarrollo web, dedicados a transformar ideas en proyectos visualmente impactantes y técnicamente sólidos. <br /><br />
 
-                        Somos Nicolás Juárez y Bruno Rossetti, dos apasionados de la magia digital.
-                        Mientras Nico proviene del mundo de la informática como desarrollador web full stack, Bruno viene de una fusión entre la arquitectura y el diseño gráfico. <br /><br />
+                      Nos especializamos en el diseño y desarrollo de sitios web, landing pages, e-commerce y mucho más. Cada proyecto es una oportunidad para fusionar creatividad y tecnología, logrando resultados que no solo se ven bien, sino que también funcionan a la perfección. <br /><br />
 
-                        ¿Querés impulsar tu negocio hacia el éxito?
-                        ¡Nosotros nos encargamos de potenciar tu presencia online!</p>
+                      ¿Querés impulsar tu negocio hacia el éxito? Nosotros nos encargamos de potenciar tu presencia online con estrategias personalizadas y un enfoque centrado en el usuario. ¡Hacemos que cada click cuente!</p>
                     </div>
                     <div className="info2">
                         <img src={fotoGrupal} alt="" />
@@ -336,7 +334,7 @@ function App() {
                         </div>
                     </div>
                     {/* <i className="fas fa-quote-right"></i> */}
-                    <p className='textoComent'>Estoy muy contento como quedó armada la página, es comoda y a los clientes se les facilita ver mi trabajo y contacto. Recomiendo mucho el trabajo de Proyecto Web para sus negocios. <br /><img className='vector-coment' src={vectorComent} alt=""/></p>
+                    <p className='textoComent'>Estoy muy contento como quedó armada la página, es comoda y a los clientes se les facilita ver mi trabajo y contacto. Recomiendo mucho el trabajo para sus negocios. <br /><img className='vector-coment' src={vectorComent} alt=""/></p>
                   </div>
 
                   <div className="swiper-slide slide">
@@ -382,7 +380,7 @@ function App() {
                       <a href="https://www.facebook.com/proyectowebb" className='botonfoter' target='_blank'>
                         <button className='botonhero5'>Facebook<img className='vector' src={vectoFB} alt="" /></button>
                       </a>
-                      <a href="https://www.instagram.com/proyecto.webb/" className='botonfoter' target='_blank'>
+                      <a href="https://www.instagram.com/nodex.dev?igsh=NGhjN241YWtrNjJw&utm_source=qr" className='botonfoter' target='_blank'>
                         <button className='botonhero5'>Instagram<img className='vector' src={vectoIG} alt="" /></  button>
                       </a>
                     </div>
@@ -395,7 +393,7 @@ function App() {
             <div className='copi'>
               <p className='textFooter'>Córdoba, Argentina. Todos los derechos reservados ©</p>
               <img src={logo} className="logoFoter" alt="logo" />
-              <p className='textFooter'>+54 3544 - 614226</p>
+              <p className='textFooter'>+54 3584-604761</p>
               <p className='textFooter'>+54 358-4834859</p>
             </div>
           </footer>
