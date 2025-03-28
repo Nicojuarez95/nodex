@@ -378,7 +378,7 @@ function App() {
                       <a href="#">Contacto</a>
                     </div>
                     <div className='footerRedes'>
-                      <a href="https://www.facebook.com/proyectowebb" className='botonfoter' target='_blank'>
+                      <a href="https://www.facebook.com/profile.php?id=61574448681623" className='botonfoter' target='_blank'>
                         <button className='botonhero5'>Facebook<img className='vector' src={vectoFB} alt="" /></button>
                       </a>
                       <a href="https://www.instagram.com/nodex.dev?igsh=NGhjN241YWtrNjJw&utm_source=qr" className='botonfoter' target='_blank'>
