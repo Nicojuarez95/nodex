@@ -259,7 +259,6 @@ function App() {
             </div>
           </div>
 
-
           
           <section className='section3'>
           <div>
