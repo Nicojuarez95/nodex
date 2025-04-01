@@ -262,8 +262,8 @@ function App() {
           <section className='section3'>
           <div>
             <a href="#" className='boton'> 
-                    <button className='botonhero2'>Contactarme<img className='vector2' src={vector} alt="" /></button>
-                  </a>
+                <button className='botonhero2'>Contactarme<img className='vector2' src={vector} alt="" /></button>
+            </a>
           </div>
           <div className='quienesSomos' id='quienesSomos'>
 
