@@ -261,7 +261,6 @@ function App() {
 
 
           
-          
           <section className='section3'>
           <div>
             <a href="#" className='boton'> 
